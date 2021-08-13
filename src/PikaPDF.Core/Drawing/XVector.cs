@@ -31,7 +31,8 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.InteropServices;
-using PdfSharp.Internal;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Internal;
 #if GDI
 using System.Drawing;
 #endif
@@ -42,7 +43,7 @@ using System.Windows.Media;
 #pragma warning disable 1591
 
 #if !EDF_CORE
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 #else
 namespace Edf.Drawing
 #endif

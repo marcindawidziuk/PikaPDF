@@ -30,9 +30,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Represents the collection of embedded files.

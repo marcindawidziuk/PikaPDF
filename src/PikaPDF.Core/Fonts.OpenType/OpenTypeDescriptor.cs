@@ -27,9 +27,6 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.Diagnostics;
-using System.Text;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -38,12 +35,16 @@ using System.Drawing.Drawing2D;
 using System.Windows;
 using System.Windows.Media;
 #endif
-using PdfSharp.Pdf.Internal;
+using System;
+using System.Diagnostics;
+using System.Text;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Pdf.Internal;
 #if !EDF_CORE
-using PdfSharp.Drawing;
 #endif
 
-namespace PdfSharp.Fonts.OpenType
+namespace PikaPDF.Core.Fonts.OpenType
 {
     /// <summary>
     /// The OpenType font descriptor.

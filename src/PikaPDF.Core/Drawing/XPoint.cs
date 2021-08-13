@@ -27,10 +27,6 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.Diagnostics;
-using System.Globalization;
-using System.Runtime.InteropServices;
 #if CORE
 #endif
 #if GDI
@@ -46,14 +42,20 @@ using Windows.UI.Xaml.Media;
 using SysPoint = Windows.Foundation.Point;
 using SysSize = Windows.Foundation.Size;
 #endif
+using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Runtime.InteropServices;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Internal;
 #if !EDF_CORE
-using PdfSharp.Internal;
+
 #else
 using PdfSharp.Internal;
 #endif
 
 #if !EDF_CORE
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 #else
 namespace Edf.Drawing
 #endif

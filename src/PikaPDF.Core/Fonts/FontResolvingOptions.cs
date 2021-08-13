@@ -34,9 +34,9 @@ using System.Drawing.Text;
 #if WPF
 using System.Windows.Media;
 #endif
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing.enums;
 
-namespace PdfSharp.Fonts
+namespace PikaPDF.Core.Fonts
 {
     /// <summary>
     /// Parameters that affect font selection.

@@ -28,9 +28,9 @@
 #endregion
 
 using System.Diagnostics;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents an indirect boolean value. This type is not used by PDFsharp. If it is imported from
@@ -82,7 +82,7 @@ namespace PdfSharp.Pdf
         }
 
         /// <summary>
-        /// Writes the keyword «false» or «true».
+        /// Writes the keyword Â«falseÂ» or Â«trueÂ».
         /// </summary>
         internal override void WriteObject(PdfWriter writer)
         {

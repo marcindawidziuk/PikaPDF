@@ -28,13 +28,13 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel.Tables;
-using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.DocumentObjectModel.Shapes.Charts;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Abstract base class for all renderers.

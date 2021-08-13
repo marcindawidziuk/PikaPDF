@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.Visitors
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors
 {
     internal interface IVisitable
     {

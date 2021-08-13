@@ -27,9 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System.Collections.Generic;
-
-namespace PdfSharp.Pdf.Internal
+namespace PikaPDF.Core.Pdf.Internal
 {
 #if true_
     /// <summary>

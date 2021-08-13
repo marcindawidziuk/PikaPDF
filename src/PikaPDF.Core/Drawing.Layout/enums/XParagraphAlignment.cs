@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Drawing.Layout
+namespace PikaPDF.Core.Drawing.Layout.enums
 {
     /// <summary>
     /// Specifies the alignment of a paragraph.

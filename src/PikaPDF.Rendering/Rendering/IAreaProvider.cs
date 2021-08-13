@@ -30,7 +30,7 @@
 
 using System.Collections.Generic;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Represents a class that provides a series of Areas to render into.

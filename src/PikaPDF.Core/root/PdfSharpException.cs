@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp
+namespace PikaPDF.Core.root
 {
     /// <summary>
     /// Base class of all exceptions in the PDFsharp frame work.

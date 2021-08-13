@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing.enums
 {
     ///<summary>
     /// Currently not used. Only DeviceRGB is rendered in PDF.

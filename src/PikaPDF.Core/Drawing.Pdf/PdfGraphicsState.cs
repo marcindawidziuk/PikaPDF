@@ -31,20 +31,22 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Text;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.Pdf.Internal;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
 #endif
 #if WPF
 #endif
-using PdfSharp.Internal;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Internal;
 
 // ReSharper disable CompareOfFloatsByEqualityOperator
 
-namespace PdfSharp.Drawing.Pdf
+namespace PikaPDF.Core.Drawing.Pdf
 {
     /// <summary>
     /// Represents the current PDF graphics state.
@@ -238,7 +240,7 @@ namespace PdfSharp.Drawing.Pdf
         public void RealizeBrush(XBrush brush, PdfColorMode colorMode, int renderingMode, double fontEmSize)
         {
             // Rendering mode 2 is used for bold simulation.
-            // Reference: TABLE 5.3  Text rendering modes / Page 402
+            // Reference: TABLE 5.3Â Â Text rendering modes / Page 402
 
             XSolidBrush solidBrush = brush as XSolidBrush;
             if (solidBrush != null)
@@ -387,7 +389,7 @@ namespace PdfSharp.Drawing.Pdf
         public XPoint RealizedTextPosition;
 
         /// <summary>
-        /// Indicates that the text transformation matrix currently skews 20° to the right.
+        /// Indicates that the text transformation matrix currently skews 20Â° to the right.
         /// </summary>
         public bool ItalicSimulationOn;
 

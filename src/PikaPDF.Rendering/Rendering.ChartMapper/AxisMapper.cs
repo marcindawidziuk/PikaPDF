@@ -28,9 +28,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Charting;
+using PikaPDF.Charting.Charting;
+using PikaPDF.Charting.Charting.enums;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     /// <summary>
     /// The AxisMapper class.
@@ -43,7 +44,7 @@ namespace MigraDoc.Rendering.ChartMapper
         public AxisMapper()
         { }
 
-        static void MapObject(Axis axis, DocumentObjectModel.Shapes.Charts.Axis domAxis)
+        static void MapObject(Axis axis, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Axis domAxis)
         {
             if (!domAxis.IsNull("TickLabels.Format"))
                 axis.TickLabels.Format = domAxis.TickLabels.Format;
@@ -91,7 +92,7 @@ namespace MigraDoc.Rendering.ChartMapper
                 LineFormatMapper.Map(axis.LineFormat, domAxis.LineFormat);
         }
 
-        internal static void Map(Axis axis, DocumentObjectModel.Shapes.Charts.Axis domAxis)
+        internal static void Map(Axis axis, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Axis domAxis)
         {
             AxisMapper mapper = new AxisMapper();
             MapObject(axis, domAxis);

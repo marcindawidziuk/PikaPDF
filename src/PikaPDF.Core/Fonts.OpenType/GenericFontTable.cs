@@ -31,7 +31,7 @@
 //using FWord = System.Int16;
 //using UFWord = System.UInt16;
 
-namespace PdfSharp.Fonts.OpenType
+namespace PikaPDF.Core.Fonts.OpenType
 {
 #if true_
     /// <summary>

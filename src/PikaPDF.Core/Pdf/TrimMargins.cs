@@ -28,9 +28,9 @@
 #endregion
 
 using System.Diagnostics;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents trim margins added to the page.

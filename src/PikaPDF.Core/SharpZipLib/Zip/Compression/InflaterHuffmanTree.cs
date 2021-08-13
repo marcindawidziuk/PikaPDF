@@ -36,10 +36,9 @@
 // exception statement from your version.
 
 using System;
+using PikaPDF.Core.SharpZipLib.Zip.Compression.Streams;
 
-using PdfSharp.SharpZipLib.Zip.Compression.Streams;
-
-namespace PdfSharp.SharpZipLib.Zip.Compression
+namespace PikaPDF.Core.SharpZipLib.Zip.Compression
 {
     /// <summary>
     /// Huffman tree used for inflation

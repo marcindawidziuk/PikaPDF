@@ -31,9 +31,9 @@
 #endregion
 
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel.Tables;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
 
-namespace MigraDoc.DocumentObjectModel.Visitors
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors
 {
     /// <summary>
     /// Comparer for the cell positions within a table.

@@ -27,9 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Pdf.Advanced;
-
-namespace PdfSharp.Pdf.Structure
+namespace PikaPDF.Core.Pdf.Structure
 {
     /// <summary>
     /// Represents the root of a structure tree.
@@ -99,10 +97,10 @@ namespace PdfSharp.Pdf.Structure
             /// that is a content item in its own right. The integer key is given as the
             /// value of the StructParent or StructParents entry in that object.
             /// The form of the associated value depends on the nature of the object:
-            ///     • For an object that is a content item in its own right, the value is an
-            ///       indirect reference to the object’s parent element (the structure element
+            ///     â€¢ For an object that is a content item in its own right, the value is an
+            ///       indirect reference to the objectâ€™s parent element (the structure element
             ///       that contains it as a content item).
-            ///     • For a page object or content stream containing marked-content sequences
+            ///     â€¢ For a page object or content stream containing marked-content sequences
             ///       that are content items, the value is an array of references to the parent
             ///       elements of those marked-content sequences.
             /// </summary>

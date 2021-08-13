@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp
+namespace PikaPDF.Core._internal
 {
     /// <summary>
     /// Floating point formatting.

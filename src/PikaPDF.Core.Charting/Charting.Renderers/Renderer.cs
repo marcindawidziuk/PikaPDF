@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Charting.Renderers
+namespace PikaPDF.Charting.Charting.Renderers
 {
     /// <summary>
     /// Base class of all renderers.

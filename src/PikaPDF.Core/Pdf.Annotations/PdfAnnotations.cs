@@ -28,15 +28,12 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Collections;
-using System.Text;
-using System.IO;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.IO;
 using System.Collections.Generic;
+using System.Diagnostics;
+using PikaPDF.Core.Pdf.Advanced;
 
-namespace PdfSharp.Pdf.Annotations
+namespace PikaPDF.Core.Pdf.Annotations
 {
     /// <summary>
     /// Represents the annotations array of a page.
@@ -98,7 +95,7 @@ namespace PdfSharp.Pdf.Annotations
         }
 
         /// <summary>
-        /// Gets the <see cref="PdfSharp.Pdf.Annotations.PdfAnnotation"/> at the specified index.
+        /// Gets the <see cref="PdfAnnotation"/> at the specified index.
         /// </summary>
         public PdfAnnotation this[int index]
         {

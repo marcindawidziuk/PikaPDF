@@ -27,9 +27,11 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Drawing;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// Defines the format of a line in a shape object.

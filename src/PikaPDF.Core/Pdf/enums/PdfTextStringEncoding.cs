@@ -29,7 +29,7 @@
 
 // ReSharper disable InconsistentNaming
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf.enums
 {
     /// <summary>
     /// Specifies how text strings are encoded. A text string is any text used outside of a page content 

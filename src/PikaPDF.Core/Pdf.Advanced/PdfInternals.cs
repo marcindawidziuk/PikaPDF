@@ -28,13 +28,12 @@
 #endregion
 
 using System;
-using System.Diagnostics;
-using System.Reflection;
-using System.Text;
 using System.IO;
-using PdfSharp.Pdf.IO;
+using System.Text;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.Pdf.IO.enums;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Provides access to the internal document data structures. This class prevents the public

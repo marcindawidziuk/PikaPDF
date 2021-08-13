@@ -34,7 +34,6 @@ using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
 #endif
-using PdfSharp.Drawing;
 
 #if GDI
 namespace PdfSharp.Forms

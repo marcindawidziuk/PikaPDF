@@ -30,9 +30,9 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using PdfSharp.Pdf;
+using PikaPDF.Core.Pdf;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing.Internal
 {
     /// <summary>
     /// This interface will be implemented by specialized classes, one for JPEG, one for BMP, one for PNG, one for GIF. Maybe more.

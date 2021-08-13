@@ -31,12 +31,14 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using PdfSharp;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel;
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.root.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums;
+using PikaPDF.Rendering.Rendering.enums;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Represents a formatted document.

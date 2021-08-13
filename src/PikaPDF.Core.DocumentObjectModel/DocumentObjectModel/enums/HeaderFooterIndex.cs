@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.enums
 {
     /// <summary>
     /// Index to the three HeaderFooter objects of a HeadersFooters collection.

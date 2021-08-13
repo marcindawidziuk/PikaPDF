@@ -29,7 +29,7 @@
 
 using System.Text;
 
-namespace PdfSharp.Pdf.Internal
+namespace PikaPDF.Core.Pdf.Internal
 {
     /// <summary>
     /// An encoder for PDF AnsiEncoding.
@@ -262,7 +262,7 @@ namespace PdfSharp.Pdf.Internal
                 case '\u0178':
                     return '\u009F';
             }
-            return '\u00A4';  // Char 164 is ANSI value of '¤'.
+            return '\u00A4';  // Char 164 is ANSI value of 'Â¤'.
         }
 
         /// <summary>

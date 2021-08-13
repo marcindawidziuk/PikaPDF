@@ -28,10 +28,9 @@
 #endregion
 
 
+using PikaPDF.Core.Drawing;
 
-using PdfSharp.Drawing;
-
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     internal interface IContentStream
     {

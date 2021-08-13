@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf.enums
 {
     /// <summary>
     /// Identifies the state of the document

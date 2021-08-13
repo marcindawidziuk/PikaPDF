@@ -34,7 +34,7 @@ using System;
 
 // ReSharper disable InconsistentNaming
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums
 {
     [Flags]
     internal enum VDFlags

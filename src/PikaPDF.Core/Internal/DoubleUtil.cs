@@ -29,14 +29,15 @@
 
 using System;
 using System.Runtime.InteropServices;
+using PikaPDF.Core.Drawing;
 #if !EDF_CORE
-using PdfSharp.Drawing;
+
 #else
 using PdfSharp.Drawing;
 #endif
 
 #if !EDF_CORE
-namespace PdfSharp.Internal
+namespace PikaPDF.Core.Internal
 #else
 namespace Edf.Internal
 #endif

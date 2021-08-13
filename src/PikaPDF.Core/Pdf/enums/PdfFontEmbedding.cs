@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf.enums
 {
     /// <summary>
     /// Specifies the embedding options of an XFont when converted into PDF.

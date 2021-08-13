@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO.enums
 {
     /// <summary>
     /// The symbols used by DdlScanner/DdlParser.
@@ -81,7 +81,7 @@ namespace MigraDoc.DocumentObjectModel.IO
         Percent,           // %
         Dollar,            // $
         Hash,              // #
-        Currency,          // ¤
+        Currency,          // Â¤
         //Questionmark,    // ?
         Quotationmark,     // "
         At,                // @

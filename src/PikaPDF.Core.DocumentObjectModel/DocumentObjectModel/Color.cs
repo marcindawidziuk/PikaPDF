@@ -34,9 +34,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// The Color class represents an ARGB color value.

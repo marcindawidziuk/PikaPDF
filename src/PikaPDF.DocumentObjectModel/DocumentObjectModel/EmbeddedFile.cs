@@ -30,9 +30,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// EmbeddedFile is used for PDF Documents that shall be embedded in another PDF Document. EmbeddedFile is only supported in PDF.

@@ -29,9 +29,10 @@
 
 using System.Diagnostics;
 using System.Globalization;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents a direct real value.

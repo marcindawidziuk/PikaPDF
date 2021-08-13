@@ -28,17 +28,17 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Charting;
-using PdfSharp.Drawing;
+using PikaPDF.Charting.Charting;
+using PikaPDF.Core.Drawing;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     internal class FillFormatMapper
     {
         private FillFormatMapper()
         { }
 
-        void MapObject(FillFormat fillFormat, DocumentObjectModel.Shapes.FillFormat domFillFormat)
+        void MapObject(FillFormat fillFormat, DocumentObjectModel.DocumentObjectModel.Shapes.FillFormat domFillFormat)
         {
             if (domFillFormat.Color.IsEmpty)
                 fillFormat.Color = XColor.Empty;
@@ -53,7 +53,7 @@ namespace MigraDoc.Rendering.ChartMapper
             fillFormat.Visible = domFillFormat.Visible;
         }
 
-        internal static void Map(FillFormat fillFormat, DocumentObjectModel.Shapes.FillFormat domFillFormat)
+        internal static void Map(FillFormat fillFormat, DocumentObjectModel.DocumentObjectModel.Shapes.FillFormat domFillFormat)
         {
             FillFormatMapper mapper = new FillFormatMapper();
             mapper.MapObject(fillFormat, domFillFormat);

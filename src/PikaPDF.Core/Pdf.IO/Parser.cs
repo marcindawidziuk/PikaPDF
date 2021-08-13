@@ -31,11 +31,13 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
-using PdfSharp.Internal;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Internal;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO.enums;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf.IO
+namespace PikaPDF.Core.Pdf.IO
 {
     /*
        Direct and indirect objects
@@ -189,8 +191,8 @@ namespace PdfSharp.Pdf.IO
                     break;
 
                 // Acrobat 6 Professional proudly presents: The Null object!
-                // Even with a one-digit object number an indirect reference «x 0 R» to this object is
-                // one character larger than the direct use of «null». Probable this is the reason why
+                // Even with a one-digit object number an indirect reference Â«x 0 RÂ» to this object is
+                // one character larger than the direct use of Â«nullÂ». Probable this is the reason why
                 // it is true that Acrobat Web Capture 6.0 creates this object, but obviously never 
                 // creates a reference to it!
                 case Symbol.Null:
@@ -1237,7 +1239,7 @@ namespace PdfSharp.Pdf.IO
             int prev = xrefStream.Elements.GetInteger(PdfCrossReferenceStream.Keys.Prev);
             PdfArray w = (PdfArray)xrefStream.Elements.GetValue(PdfCrossReferenceStream.Keys.W);
 
-            // E.g.: W[1 2 1] ¤ Index[7 12] ¤ Size 19
+            // E.g.: W[1 2 1] Â¤ Index[7 12] Â¤ Size 19
 
             // Setup subsections.
             int subsectionCount;

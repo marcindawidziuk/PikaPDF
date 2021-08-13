@@ -27,9 +27,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
 
-namespace PdfSharp.Charting.Renderers
+namespace PikaPDF.Charting.Charting.Renderers
 {
     /// <summary>
     /// Represents a plot area renderer of clustered bars, i. e. all bars are drawn side by side.

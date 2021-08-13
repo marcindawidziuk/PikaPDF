@@ -29,9 +29,10 @@
 
 using System;
 using System.Collections.Generic;
-using PdfSharp.Drawing;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
 
-namespace PdfSharp.Charting.Renderers
+namespace PikaPDF.Charting.Charting.Renderers
 {
     /// <summary>
     /// Represents a renderer for combinations of charts.

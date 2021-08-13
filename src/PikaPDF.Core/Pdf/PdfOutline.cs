@@ -33,20 +33,21 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Text;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf.Actions;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Internal;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf.Actions;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents an outline item in the outlines tree. An 'outline' is also known as a 'bookmark'.
     /// </summary>
     public sealed class PdfOutline : PdfDictionary
     {
-        // Reference: 8.2.2  Document Outline / Page 584
+        // Reference: 8.2.2Â Â Document Outline / Page 584
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PdfOutline"/> class.
@@ -752,14 +753,14 @@ namespace PdfSharp.Pdf
 
             /// <summary>
             /// (Required if the item has any descendants; must be an indirect reference)
-            ///  The first of this item’s immediate children in the outline hierarchy.
+            ///  The first of this itemâ€™s immediate children in the outline hierarchy.
             /// </summary>
             [KeyInfo(KeyType.Dictionary | KeyType.Required)]
             public const string First = "/First";
 
             /// <summary>
             /// (Required if the item has any descendants; must be an indirect reference)
-            /// The last of this item’s immediate children in the outline hierarchy.
+            /// The last of this itemâ€™s immediate children in the outline hierarchy.
             /// </summary>
             [KeyInfo(KeyType.Dictionary | KeyType.Required)]
             public const string Last = "/Last";
@@ -800,7 +801,7 @@ namespace PdfSharp.Pdf
 
             /// <summary>
             /// (Optional; PDF 1.4) An array of three numbers in the range 0.0 to 1.0, representing the 
-            /// components in the DeviceRGB color space of the color to be used for the outline entry’s text.
+            /// components in the DeviceRGB color space of the color to be used for the outline entryâ€™s text.
             /// Default value: [0.0 0.0 0.0].
             /// </summary>
             [KeyInfo(KeyType.Array | KeyType.Optional)]
@@ -808,7 +809,7 @@ namespace PdfSharp.Pdf
 
             /// <summary>
             /// (Optional; PDF 1.4) A set of flags specifying style characteristics for displaying the outline
-            /// item’s text. Default value: 0.
+            /// itemâ€™s text. Default value: 0.
             /// </summary>
             [KeyInfo(KeyType.Integer | KeyType.Optional)]
             public const string F = "/F";

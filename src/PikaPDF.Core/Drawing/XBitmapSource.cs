@@ -30,9 +30,7 @@
 #if CORE
 #endif
 
-using System.Diagnostics;
-using PdfSharp.Internal;
-
+using PikaPDF.Core.Internal;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -51,7 +49,7 @@ using Windows.UI.Xaml.Media.Imaging;
 #pragma warning disable 0169
 #pragma warning disable 0649
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Defines an abstract base class for pixel based images.

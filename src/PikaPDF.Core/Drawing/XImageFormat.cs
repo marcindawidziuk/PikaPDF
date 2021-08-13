@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Specifies the format of the image.

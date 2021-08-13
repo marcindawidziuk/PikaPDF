@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums;
 
-namespace MigraDoc.DocumentObjectModel.Tables
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables
 {
     /// <summary>
     /// Contains methods to simplify table formatting.

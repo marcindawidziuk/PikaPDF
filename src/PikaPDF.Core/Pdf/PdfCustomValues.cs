@@ -28,8 +28,9 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Pdf.enums;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// This class is intended for empira internal use only and may change or drop in future releases.

@@ -32,7 +32,7 @@
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel.Tables
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums
 {
     /// <summary>
     /// Specifies the vertical alignment of the cell's content.

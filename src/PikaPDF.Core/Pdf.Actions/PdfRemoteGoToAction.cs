@@ -27,9 +27,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf.Actions
+namespace PikaPDF.Core.Pdf.Actions
 {
     /// <summary>
     /// Represents a PDF Remote Goto action.
@@ -111,15 +111,15 @@ namespace PdfSharp.Pdf.Actions
             //public const string S = "/S";
 
             /// <summary>
-            /// (Required) The destination to jump to (see Section 8.5.3, ìAction Typesî).
+            /// (Required) The destination to jump to (see Section 8.5.3, ‚ÄúAction Types‚Äù).
             /// </summary>
             [KeyInfo(KeyType.String | KeyType.Dictionary | KeyType.Required)]
             //[KeyInfo(KeyType.FileSpecification | KeyType.Required)] // File Specifications are not yet implemented.
             public const string F = "/F";
 
             /// <summary>
-            /// (Required) The destination to jump to (see Section 8.2.1, ìDestinationsî).
-            /// If the value is an array defining an explicit destination (as described under ìExplicit Destinationsî on page 582),
+            /// (Required) The destination to jump to (see Section 8.2.1, ‚ÄúDestinations‚Äù).
+            /// If the value is an array defining an explicit destination (as described under ‚ÄúExplicit Destinations‚Äù on page 582),
             /// its first element must be a page number within the remote document rather than an indirect reference to a page object
             /// in the current document. The first page is numbered 0.
             /// </summary>

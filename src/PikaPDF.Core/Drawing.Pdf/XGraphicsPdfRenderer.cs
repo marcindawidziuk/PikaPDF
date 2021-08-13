@@ -30,11 +30,21 @@
 #define ITALIC_SIMULATION
 
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using System.Collections.Generic;
 using System.Text;
-using PdfSharp.Events;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Drawing.Pdf.enums;
+using PikaPDF.Core.Events;
+using PikaPDF.Core.Fonts.OpenType;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -50,16 +60,11 @@ using Windows.UI.Xaml.Media;
 using SysPoint = Windows.Foundation.Point;
 using SysSize = Windows.Foundation.Size;
 #endif
-using PdfSharp.Fonts.OpenType;
-using PdfSharp.Internal;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.Internal;
-using PdfSharp.Pdf.Advanced;
 
 // ReSharper disable RedundantNameQualifier
 // ReSharper disable CompareOfFloatsByEqualityOperator
 
-namespace PdfSharp.Drawing.Pdf
+namespace PikaPDF.Core.Drawing.Pdf
 {
     /// <summary>
     /// Represents a drawing surface for PdfPages.

@@ -28,17 +28,19 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Charting;
-using PdfSharp.Drawing;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using Font = PikaPDF.Charting.Charting.Font;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     internal class FontMapper
     {
         private FontMapper()
         { }
 
-        void MapObject(Font font, DocumentObjectModel.Font domFont)
+        void MapObject(Font font, DocumentObjectModel.DocumentObjectModel.Font domFont)
         {
             font.Bold = domFont.Bold;
             if (domFont.Color.IsEmpty)
@@ -61,9 +63,9 @@ namespace MigraDoc.Rendering.ChartMapper
             font.Underline = (Underline)domFont.Underline;
         }
 
-        internal static void Map(Font font, DocumentObjectModel.Document domDocument, string domStyleName)
+        internal static void Map(Font font, Document domDocument, string domStyleName)
         {
-            DocumentObjectModel.Style domStyle = domDocument.Styles[domStyleName];
+            Style domStyle = domDocument.Styles[domStyleName];
             if (domStyle != null)
             {
                 FontMapper mapper = new FontMapper();
@@ -71,7 +73,7 @@ namespace MigraDoc.Rendering.ChartMapper
             }
         }
 
-        internal static void Map(Font font, DocumentObjectModel.Font domFont)
+        internal static void Map(Font font, DocumentObjectModel.DocumentObjectModel.Font domFont)
         {
             FontMapper mapper = new FontMapper();
             mapper.MapObject(font, domFont);

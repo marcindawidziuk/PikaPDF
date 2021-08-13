@@ -28,10 +28,12 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Charting;
-using PdfSharp.Drawing;
+using PikaPDF.Charting.Charting;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
+using Chart = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Chart;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     /// <summary>
     /// Maps charts from the MigraDoc.DocumentObjectModel to charts from Pdf.Charting.
@@ -44,13 +46,13 @@ namespace MigraDoc.Rendering.ChartMapper
         public ChartMapper()
         { }
 
-        private ChartFrame MapObject(DocumentObjectModel.Shapes.Charts.Chart domChart)
+        private ChartFrame MapObject(Chart domChart)
         {
             ChartFrame chartFrame = new ChartFrame();
             chartFrame.Size = new XSize(domChart.Width.Point, domChart.Height.Point);
             chartFrame.Location = new XPoint(domChart.Left.Position.Point, domChart.Top.Position.Point);
 
-            Chart chart = new Chart((ChartType)domChart.Type);
+            Charting.Charting.Chart chart = new Charting.Charting.Chart((ChartType)domChart.Type);
 
             if (!domChart.IsNull("XAxis"))
                 AxisMapper.Map(chart.XAxis, domChart.XAxis);
@@ -84,7 +86,7 @@ namespace MigraDoc.Rendering.ChartMapper
         /// </summary>
         /// <param name="domChart">The DOM chart.</param>
         /// <returns></returns>
-        public static ChartFrame Map(DocumentObjectModel.Shapes.Charts.Chart domChart)
+        public static ChartFrame Map(Chart domChart)
         {
             ChartMapper mapper = new ChartMapper();
             return mapper.MapObject(domChart);

@@ -31,16 +31,17 @@
 #endregion
 
 using System;
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Represents a special character in paragraph text.
     /// </summary>
-    // TODO: So ändern, dass symbolName und char in unterschiedlichen Feldern gespeichert werden.
+    // TODO: So Ã¤ndern, dass symbolName und char in unterschiedlichen Feldern gespeichert werden.
     // TODO Remove German remarks!
     public class Character : DocumentObject
     {

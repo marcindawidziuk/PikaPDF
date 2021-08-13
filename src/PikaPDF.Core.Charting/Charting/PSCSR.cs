@@ -27,7 +27,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Charting
+using PikaPDF.Charting.Charting.enums;
+
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// The Pdf-Sharp-Charting-String-Resources.

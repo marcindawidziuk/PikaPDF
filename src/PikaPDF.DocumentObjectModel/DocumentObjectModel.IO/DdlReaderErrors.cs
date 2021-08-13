@@ -30,10 +30,11 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.IO.enums;
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO
 {
     /// <summary>
     /// Used to collect errors reported by the DDL parser.

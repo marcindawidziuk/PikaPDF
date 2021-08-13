@@ -32,7 +32,7 @@
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel.Shapes.Charts
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.enums
 {
     /// <summary>
     /// Symbols of a data point in a line chart.

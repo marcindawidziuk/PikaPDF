@@ -27,10 +27,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Pdf.Annotations;
-using PdfSharp.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Annotations;
 
-namespace PdfSharp.Pdf.AcroForms
+namespace PikaPDF.Core.Pdf.AcroForms
 {
     /// <summary>
     /// Represents the check box field.
@@ -68,7 +68,7 @@ namespace PdfSharp.Pdf.AcroForms
                 if (Fields.Elements.Items.Length == 2)
                 {
                     string value = ((PdfDictionary)(((PdfReference)(Fields.Elements.Items[0])).Value)).Elements.GetString(Keys.V);
-                    //bool bReturn = value.Length != 0 && value != UncheckedValue; //R081114 (3Std.!!) auch auf Nein prüfen; //TODO woher kommt der Wert?
+                    //bool bReturn = value.Length != 0 && value != UncheckedValue; //R081114 (3Std.!!) auch auf Nein prÃ¼fen; //TODO woher kommt der Wert?
                     bool bReturn = value.Length != 0 && value == CheckedName;
                     return bReturn;
                 }
@@ -217,7 +217,7 @@ namespace PdfSharp.Pdf.AcroForms
                     if (Fields.Elements.Items.Length == 2)
                     {
                         string value = ((PdfDictionary)(((PdfReference)(Fields.Elements.Items[0])).Value)).Elements.GetString(Keys.V);
-                        bool bReturn = value.Length != 0 && value != "/Off" && value != "/Nein"; //R081114 (3Std.!!) auch auf Nein prüfen; //TODO woher kommt der Wert?
+                        bool bReturn = value.Length != 0 && value != "/Off" && value != "/Nein"; //R081114 (3Std.!!) auch auf Nein prÃ¼fen; //TODO woher kommt der Wert?
                         return bReturn;
                     }
                     else

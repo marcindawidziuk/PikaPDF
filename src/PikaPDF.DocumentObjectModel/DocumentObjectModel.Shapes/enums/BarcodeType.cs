@@ -32,7 +32,7 @@
 
 // ReSharper disable InconsistentNaming
 
-namespace MigraDoc.DocumentObjectModel.Shapes
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.enums
 {
     /// <summary>
     /// Specifies the type of the barcode.

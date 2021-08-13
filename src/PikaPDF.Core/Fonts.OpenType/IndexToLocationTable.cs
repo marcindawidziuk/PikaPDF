@@ -31,12 +31,13 @@
 
 using System;
 using System.Diagnostics;
+using PikaPDF.Core.Fonts.OpenType.enums;
 
 //using Fixed = System.Int32;
 //using FWord = System.Int16;
 //using UFWord = System.UInt16;
 
-namespace PdfSharp.Fonts.OpenType
+namespace PikaPDF.Core.Fonts.OpenType
 {
     /// <summary>
     /// The indexToLoc table stores the offsets to the locations of the glyphs in the font,

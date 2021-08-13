@@ -28,76 +28,80 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Charting;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts;
+using Chart = PikaPDF.Charting.Charting.Chart;
+using Legend = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Legend;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     internal class LegendMapper
     {
         private LegendMapper()
         { }
 
-        void MapObject(Chart chart, DocumentObjectModel.Shapes.Charts.Chart domChart)
+        void MapObject(Chart chart, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Chart domChart)
         {
-            DocumentObjectModel.Shapes.Charts.Legend domLegend = null;
-            DocumentObjectModel.Shapes.Charts.TextArea textArea = null;
+            Legend domLegend = null;
+            TextArea textArea = null;
 
-            foreach (DocumentObjectModel.DocumentObject domObj in domChart.BottomArea.Elements)
+            foreach (DocumentObject domObj in domChart.BottomArea.Elements)
             {
-                if (domObj is DocumentObjectModel.Shapes.Charts.Legend)
+                if (domObj is Legend)
                 {
                     chart.Legend.Docking = DockingType.Bottom;
-                    domLegend = domObj as DocumentObjectModel.Shapes.Charts.Legend;
+                    domLegend = domObj as Legend;
                     textArea = domChart.BottomArea;
                 }
             }
 
-            foreach (DocumentObjectModel.DocumentObject domObj in domChart.RightArea.Elements)
+            foreach (DocumentObject domObj in domChart.RightArea.Elements)
             {
-                if (domObj is DocumentObjectModel.Shapes.Charts.Legend)
+                if (domObj is Legend)
                 {
                     chart.Legend.Docking = DockingType.Right;
-                    domLegend = domObj as DocumentObjectModel.Shapes.Charts.Legend;
+                    domLegend = domObj as Legend;
                     textArea = domChart.RightArea;
                 }
             }
 
-            foreach (DocumentObjectModel.DocumentObject domObj in domChart.LeftArea.Elements)
+            foreach (DocumentObject domObj in domChart.LeftArea.Elements)
             {
-                if (domObj is DocumentObjectModel.Shapes.Charts.Legend)
+                if (domObj is Legend)
                 {
                     chart.Legend.Docking = DockingType.Left;
-                    domLegend = domObj as DocumentObjectModel.Shapes.Charts.Legend;
+                    domLegend = domObj as Legend;
                     textArea = domChart.LeftArea;
                 }
             }
 
-            foreach (DocumentObjectModel.DocumentObject domObj in domChart.TopArea.Elements)
+            foreach (DocumentObject domObj in domChart.TopArea.Elements)
             {
-                if (domObj is DocumentObjectModel.Shapes.Charts.Legend)
+                if (domObj is Legend)
                 {
                     chart.Legend.Docking = DockingType.Top;
-                    domLegend = domObj as DocumentObjectModel.Shapes.Charts.Legend;
+                    domLegend = domObj as Legend;
                     textArea = domChart.TopArea;
                 }
             }
 
-            foreach (DocumentObjectModel.DocumentObject domObj in domChart.HeaderArea.Elements)
+            foreach (DocumentObject domObj in domChart.HeaderArea.Elements)
             {
-                if (domObj is DocumentObjectModel.Shapes.Charts.Legend)
+                if (domObj is Legend)
                 {
                     chart.Legend.Docking = DockingType.Top;
-                    domLegend = domObj as DocumentObjectModel.Shapes.Charts.Legend;
+                    domLegend = domObj as Legend;
                     textArea = domChart.HeaderArea;
                 }
             }
 
-            foreach (DocumentObjectModel.DocumentObject domObj in domChart.FooterArea.Elements)
+            foreach (DocumentObject domObj in domChart.FooterArea.Elements)
             {
-                if (domObj is DocumentObjectModel.Shapes.Charts.Legend)
+                if (domObj is Legend)
                 {
                     chart.Legend.Docking = DockingType.Bottom;
-                    domLegend = domObj as DocumentObjectModel.Shapes.Charts.Legend;
+                    domLegend = domObj as Legend;
                     textArea = domChart.FooterArea;
                 }
             }
@@ -113,7 +117,7 @@ namespace MigraDoc.Rendering.ChartMapper
             }
         }
 
-        internal static void Map(Chart chart, DocumentObjectModel.Shapes.Charts.Chart domChart)
+        internal static void Map(Chart chart, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Chart domChart)
         {
             LegendMapper mapper = new LegendMapper();
             mapper.MapObject(chart, domChart);

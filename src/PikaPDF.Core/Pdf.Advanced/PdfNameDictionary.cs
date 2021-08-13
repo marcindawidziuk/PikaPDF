@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents the name dictionary.

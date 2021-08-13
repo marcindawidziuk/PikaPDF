@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.Shapes.Charts
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.enums
 {
     /// <summary>
     /// Determines where the data label will be positioned.

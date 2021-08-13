@@ -28,9 +28,10 @@
 #endregion
 
 using System;
-using System.Globalization;
 using System.ComponentModel;
+using System.Globalization;
 using System.Threading;
+using PikaPDF.Core.Drawing.enums;
 #if GDI
 using System.Drawing;
 #endif
@@ -38,7 +39,7 @@ using System.Drawing;
 using System.Windows.Media;
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Manages the localization of the color class.

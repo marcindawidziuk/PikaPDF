@@ -31,10 +31,12 @@
 #endregion
 
 using System;
-using MigraDoc.DocumentObjectModel.Internals;
-using MigraDoc.DocumentObjectModel.Visitors;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Represents style templates for paragraph or character formatting.
@@ -285,7 +287,7 @@ namespace MigraDoc.DocumentObjectModel
                 throw new ArgumentException("User defined Style defined without a BaseStyle");
 
             // TODO Remove German remarks!
-            //REVIEW KlPo4StLa Spezialbehandlung für den DefaultParagraphFont krüppelig(DefaultParagraphFont wird bei Zugriff über styles["name"] nicht zurückgeliefert).
+            //REVIEW KlPo4StLa Spezialbehandlung fÃ¼r den DefaultParagraphFont krÃ¼ppelig(DefaultParagraphFont wird bei Zugriff Ã¼ber styles["name"] nicht zurÃ¼ckgeliefert).
             if (_baseStyle.Value == DefaultParagraphFontName)
                 return styles[0];
 

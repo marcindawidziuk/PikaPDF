@@ -28,7 +28,6 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 #if GDI
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -41,7 +40,7 @@ using System.Windows.Media;
 // WPFHACK
 #pragma warning disable 162
 
-namespace PdfSharp.Drawing.BarCodes
+namespace PikaPDF.Core.Drawing.BarCodes
 {
     /// <summary>
     /// Creates the XImage object for a DataMatrix.

@@ -31,12 +31,14 @@
 #endregion
 
 using System;
-using MigraDoc.DocumentObjectModel.Internals;
-using MigraDoc.DocumentObjectModel.Visitors;
-using MigraDoc.DocumentObjectModel.Fields;
-using MigraDoc.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// A Hyperlink is used to reference targets in the document (Local), on a drive (File) or a network (Web).

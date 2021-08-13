@@ -28,13 +28,13 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Text;
-using PdfSharp.Internal;
+using PikaPDF.Core.Internal;
 
-namespace PdfSharp.Fonts.OpenType
+namespace PikaPDF.Core.Fonts.OpenType
 {
     /// <summary>
     /// Global table of all OpenType fontfaces cached by their face name and check sum.

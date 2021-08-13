@@ -30,18 +30,20 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Internal;
-#if !NETFX_CORE && !UWP
 using System.Security.Cryptography;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.Pdf.IO.enums;
+using PikaPDF.Core.Pdf.Security.enums;
+using PikaPDF.Core.root;
+#if !NETFX_CORE && !UWP
 #endif
 
 #pragma warning disable 0169
 #pragma warning disable 0649
 
-namespace PdfSharp.Pdf.Security
+namespace PikaPDF.Core.Pdf.Security
 {
     /// <summary>
     /// Represents the standard PDF security handler.
@@ -674,12 +676,12 @@ namespace PdfSharp.Pdf.Security
             /// <summary>
             /// (Required) A number specifying which revision of the standard security handler
             /// should be used to interpret this dictionary:
-            /// • 2 if the document is encrypted with a V value less than 2 and does not have any of
+            /// â€¢ 2 if the document is encrypted with a V value less than 2 and does not have any of
             ///   the access permissions set (by means of the P entry, below) that are designated 
             ///   "Revision 3 or greater".
-            /// • 3 if the document is encrypted with a V value of 2 or 3, or has any "Revision 3 or 
+            /// â€¢ 3 if the document is encrypted with a V value of 2 or 3, or has any "Revision 3 or 
             ///   greater" access permissions set.
-            /// • 4 if the document is encrypted with a V value of 4
+            /// â€¢ 4 if the document is encrypted with a V value of 4
             /// </summary>
             [KeyInfo(KeyType.Integer | KeyType.Required)]
             public const string R = "/R";

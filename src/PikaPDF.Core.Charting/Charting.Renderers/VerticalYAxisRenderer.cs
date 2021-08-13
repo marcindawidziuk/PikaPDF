@@ -28,9 +28,11 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
 
-namespace PdfSharp.Charting.Renderers
+namespace PikaPDF.Charting.Charting.Renderers
 {
     /// <summary>
     /// Represents a Y axis renderer used for charts of type Column2D or Line.

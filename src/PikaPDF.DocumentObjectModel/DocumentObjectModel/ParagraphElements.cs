@@ -31,11 +31,13 @@
 #endregion
 
 using System;
-using MigraDoc.DocumentObjectModel.Internals;
-using MigraDoc.DocumentObjectModel.Fields;
-using MigraDoc.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// A ParagraphElements collection contains the individual objects of a paragraph.

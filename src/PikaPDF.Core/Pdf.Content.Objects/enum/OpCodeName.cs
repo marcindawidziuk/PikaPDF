@@ -31,7 +31,7 @@
 
 // ReSharper disable InconsistentNaming
 
-namespace PdfSharp.Pdf.Content.Objects
+namespace PikaPDF.Core.Pdf.Content.Objects.@enum
 {
     /// <summary>
     /// The names of the op-codes. 
@@ -42,7 +42,7 @@ namespace PdfSharp.Pdf.Content.Objects
 
         // I know that this is not useable in VB or other languages with no case sensitivity.
 
-        // Reference: TABLE A.1  PDF content stream operators / Page 985
+        // Reference: TABLE A.1Â Â PDF content stream operators / Page 985
         
         /// <summary>
         /// Close, fill, and stroke path using nonzero winding number rule.

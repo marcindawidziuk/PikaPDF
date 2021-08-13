@@ -28,11 +28,13 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel.Shapes;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.enums;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Renders a line format to an XGraphics object.

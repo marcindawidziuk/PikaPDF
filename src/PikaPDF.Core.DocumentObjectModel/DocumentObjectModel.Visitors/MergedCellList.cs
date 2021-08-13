@@ -32,10 +32,12 @@
 
 using System;
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel.Tables;
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums;
 
-namespace MigraDoc.DocumentObjectModel.Visitors
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors
 {
     /// <summary>
     /// Represents a merged list of cells of a table.

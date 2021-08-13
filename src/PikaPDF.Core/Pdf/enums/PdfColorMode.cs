@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf.enums
 {
     /// <summary>
     /// Specifies what color model is used in a PDF document.

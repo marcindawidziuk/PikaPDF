@@ -29,7 +29,9 @@
 
 // ReSharper disable ConvertToAutoProperty
 
-namespace PdfSharp.Pdf
+using PikaPDF.Core.Pdf.enums;
+
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Holds information how to handle the document when it is saved as PDF stream.

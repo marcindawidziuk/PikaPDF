@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.Shapes.Charts
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.enums
 {
     /// <summary>
     /// Used to determine the horizontal alignment of the axis title.

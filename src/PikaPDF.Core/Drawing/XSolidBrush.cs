@@ -28,7 +28,7 @@
 #endregion
 
 using System;
-using System.Diagnostics;
+using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 #endif
@@ -42,7 +42,7 @@ using Microsoft.Graphics.Canvas.Brushes;
 using UwpBrush = Windows.UI.Xaml.Media.Brush;
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Defines a single color object used to fill shapes and draw text.

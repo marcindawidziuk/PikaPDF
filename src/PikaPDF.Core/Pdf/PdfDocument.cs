@@ -30,19 +30,23 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using PdfSharp.Events;
+using PikaPDF.Core.Events;
+using PikaPDF.Core.Pdf.AcroForms;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.Pdf.IO.enums;
+using PikaPDF.Core.Pdf.Security;
+using PikaPDF.Core.Pdf.Security.enums;
+using PikaPDF.Core.root;
 #if NETFX_CORE
 using System.Threading.Tasks;
 #endif
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Internal;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.AcroForms;
-using PdfSharp.Pdf.Security;
 
 // ReSharper disable ConvertPropertyToExpressionBody
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents a PDF document.

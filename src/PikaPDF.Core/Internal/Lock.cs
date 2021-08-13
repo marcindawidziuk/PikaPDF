@@ -28,11 +28,9 @@
 #endregion
 
 using System;
-using System.ComponentModel;
 using System.Threading;
-using PdfSharp.Pdf.Internal;
 
-namespace PdfSharp.Internal
+namespace PikaPDF.Core.Internal
 {
     /// <summary>
     /// Static locking functions to make PDFsharp thread save.

@@ -29,8 +29,15 @@
 
 using System;
 using System.Diagnostics;
-using System.IO;
 using System.Text;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Drawing.Pdf;
+using PikaPDF.Core.Events;
+using PikaPDF.Core.Pdf;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -74,18 +81,13 @@ using SysPoint = Windows.Foundation.Point;
 using SysSize = Windows.Foundation.Size;
 using SysRect = Windows.Foundation.Rect;
 #endif
-using PdfSharp.Pdf;
-using PdfSharp.Drawing.Pdf;
-using PdfSharp.Events;
-using PdfSharp.Internal;
-using PdfSharp.Pdf.Advanced;
 
 #pragma warning disable 1587
 // ReSharper disable UseNullPropagation
 // ReSharper disable RedundantNameQualifier
 // ReSharper disable UseNameofExpression
 
-namespace PdfSharp.Drawing  // #??? Clean up
+namespace PikaPDF.Core.Drawing  // #??? Clean up
 {
     /// <summary>
     /// Holds information about the current state of the XGraphics object.
@@ -399,7 +401,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 #if GDI && WPF
             TargetContext = PdfSharp.Internal.TargetContextHelper.TargetContext;
 #endif
-            _renderer = new PdfSharp.Drawing.Pdf.XGraphicsPdfRenderer(page, this, options);
+            _renderer = new XGraphicsPdfRenderer(page, this, options);
             _pageSizePoints = new XSize(page.Width, page.Height);
             switch (pageUnit)
             {
@@ -1257,7 +1259,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 
 #if GDI
         /// <summary>
-        /// Draws a Bézier spline defined by four points.
+        /// Draws a BÃ©zier spline defined by four points.
         /// </summary>
         public void DrawBezier(XPen pen, GdiPoint pt1, GdiPoint pt2, GdiPoint pt3, GdiPoint pt4)
         {
@@ -1270,7 +1272,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 
 #if WPF
         /// <summary>
-        /// Draws a Bézier spline defined by four points.
+        /// Draws a BÃ©zier spline defined by four points.
         /// </summary>
         public void DrawBezier(XPen pen, SysPoint pt1, SysPoint pt2, SysPoint pt3, SysPoint pt4)
         {
@@ -1280,7 +1282,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 
 #if GDI
         /// <summary>
-        /// Draws a Bézier spline defined by four points.
+        /// Draws a BÃ©zier spline defined by four points.
         /// </summary>
         public void DrawBezier(XPen pen, GdiPointF pt1, GdiPointF pt2, GdiPointF pt3, GdiPointF pt4)
         {
@@ -1289,7 +1291,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 #endif
 
         /// <summary>
-        /// Draws a Bézier spline defined by four points.
+        /// Draws a BÃ©zier spline defined by four points.
         /// </summary>
         public void DrawBezier(XPen pen, XPoint pt1, XPoint pt2, XPoint pt3, XPoint pt4)
         {
@@ -1297,7 +1299,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
         }
 
         /// <summary>
-        /// Draws a Bézier spline defined by four points.
+        /// Draws a BÃ©zier spline defined by four points.
         /// </summary>
         public void DrawBezier(XPen pen, double x1, double y1, double x2, double y2,
           double x3, double y3, double x4, double y4)
@@ -1348,7 +1350,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 
 #if GDI
         /// <summary>
-        /// Draws a series of Bézier splines from an array of points.
+        /// Draws a series of BÃ©zier splines from an array of points.
         /// </summary>
         public void DrawBeziers(XPen pen, GdiPoint[] points)
         {
@@ -1358,7 +1360,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 
 #if WPF
         /// <summary>
-        /// Draws a series of Bézier splines from an array of points.
+        /// Draws a series of BÃ©zier splines from an array of points.
         /// </summary>
         public void DrawBeziers(XPen pen, SysPoint[] points)
         {
@@ -1368,7 +1370,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 
 #if GDI
         /// <summary>
-        /// Draws a series of Bézier splines from an array of points.
+        /// Draws a series of BÃ©zier splines from an array of points.
         /// </summary>
         public void DrawBeziers(XPen pen, GdiPointF[] points)
         {
@@ -1377,7 +1379,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
 #endif
 
         /// <summary>
-        /// Draws a series of Bézier splines from an array of points.
+        /// Draws a series of BÃ©zier splines from an array of points.
         /// </summary>
         public void DrawBeziers(XPen pen, XPoint[] points)
         {
@@ -5251,7 +5253,7 @@ namespace PdfSharp.Drawing  // #??? Clean up
         {
             get
             {
-                XGraphicsPdfRenderer renderer = _renderer as PdfSharp.Drawing.Pdf.XGraphicsPdfRenderer;
+                XGraphicsPdfRenderer renderer = _renderer as XGraphicsPdfRenderer;
                 return renderer != null ? renderer._page : null;
             }
         }

@@ -28,7 +28,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering.enums
 {
     internal enum VerticalReference
     {

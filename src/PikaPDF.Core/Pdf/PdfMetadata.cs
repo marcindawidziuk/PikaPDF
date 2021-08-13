@@ -28,9 +28,9 @@
 #endregion
 
 using System;
-using PdfSharp.Pdf.Internal;
+using PikaPDF.Core.Pdf.Internal;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents an XML Metadata stream.

@@ -28,8 +28,9 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Drawing.BarCodes.enums;
 
-namespace PdfSharp.Drawing.BarCodes
+namespace PikaPDF.Core.Drawing.BarCodes
 {
     /// <summary>
     /// Imlpementation of the Code 3 of 9 bar code.

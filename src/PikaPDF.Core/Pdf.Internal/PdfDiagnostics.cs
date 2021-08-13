@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf.Internal
+namespace PikaPDF.Core.Pdf.Internal
 {
     class PdfDiagnostics
     {

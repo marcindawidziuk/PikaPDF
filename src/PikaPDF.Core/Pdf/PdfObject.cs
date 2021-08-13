@@ -29,10 +29,10 @@
 
 using System;
 using System.Diagnostics;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Base class of all composite PDF objects.

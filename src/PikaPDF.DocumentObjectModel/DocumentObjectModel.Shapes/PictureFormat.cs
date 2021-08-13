@@ -30,11 +30,11 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel.Shapes
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes
 {
     /// <summary>
     /// A PictureFormat object.

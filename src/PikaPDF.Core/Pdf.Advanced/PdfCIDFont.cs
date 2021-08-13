@@ -27,11 +27,12 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Drawing;
-using PdfSharp.Pdf.Filters;
-using PdfSharp.Fonts.OpenType;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Fonts.OpenType;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.Pdf.Filters;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents a CIDFont dictionary.

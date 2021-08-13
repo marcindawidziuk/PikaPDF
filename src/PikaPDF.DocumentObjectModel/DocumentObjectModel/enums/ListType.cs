@@ -32,7 +32,7 @@
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.enums
 {
     /// <summary>
     /// Specifies the symbol or kind of numbering of the list.

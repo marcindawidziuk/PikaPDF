@@ -1,7 +1,7 @@
-﻿using PdfSharp.Drawing;
-using PdfSharp.Pdf.Internal;
+﻿using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf.Internal;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Creates the named destination parameters.

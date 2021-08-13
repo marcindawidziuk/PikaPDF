@@ -29,9 +29,8 @@
 
 using System;
 using System.Globalization;
-using PdfSharp.Pdf.Content;
-using PdfSharp.Pdf.IO;
-
+using PikaPDF.Core.Pdf.Content;
+using PikaPDF.Core.Pdf.IO;
 #if GDI
 using System.Drawing;
 #endif
@@ -39,7 +38,7 @@ using System.Drawing;
 using System.Windows;
 #endif
 
-namespace PdfSharp.Internal
+namespace PikaPDF.Core.Internal
 {
     enum NotImplementedBehaviour
     {

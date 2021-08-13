@@ -34,7 +34,7 @@ using System;
 
 // ReSharper disable InconsistentNaming
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals
 {
     /// <summary>
     /// Indicates that this field can be accessed via SetValue and GetValue.

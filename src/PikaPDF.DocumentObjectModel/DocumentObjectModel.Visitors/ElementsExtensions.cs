@@ -26,12 +26,14 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 // DEALINGS IN THE SOFTWARE.
 #endregion
+
 using System.Collections.Generic;
 using System.Linq;
-using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.DocumentObjectModel.Tables;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
 
-namespace MigraDoc.DocumentObjectModel.Visitors
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors
 {
     public static class ElementsExtensions
     {

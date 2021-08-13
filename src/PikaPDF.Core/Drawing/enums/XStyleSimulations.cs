@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing.enums
 {
     /// <summary>
     /// Describes the simulation style of a font.

@@ -28,10 +28,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Abstract base class for all classes that store rendering information.

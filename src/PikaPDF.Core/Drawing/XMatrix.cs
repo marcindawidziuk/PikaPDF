@@ -27,10 +27,6 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.Diagnostics;
-using System.Globalization;
-using System.Runtime.InteropServices;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -39,15 +35,22 @@ using System.Drawing.Drawing2D;
 using System.Windows;
 using System.Windows.Media;
 #endif
+using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Runtime.InteropServices;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Internal;
 #if !EDF_CORE
-using PdfSharp.Internal;
+
 #else
 using PdfSharp.Internal;
 #endif
 
 // ReSharper disable RedundantNameQualifier
 #if !EDF_CORE
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 #else
 namespace Edf.Drawing
 #endif

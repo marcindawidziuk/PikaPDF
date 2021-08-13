@@ -28,9 +28,11 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Pdf.enums;
 
-namespace PdfSharp.Pdf.Internal
+namespace PikaPDF.Core.Pdf.Internal
 {
     /// <summary>
     /// Helper functions for RGB and CMYK colors.

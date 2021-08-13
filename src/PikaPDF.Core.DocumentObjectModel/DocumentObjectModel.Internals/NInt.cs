@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals
 {
     /// <summary>
     /// Represents a nullable integer value.

@@ -29,7 +29,7 @@
 
 // Not used in PDFsharp 1.x.
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     enum FontWeightValues
     {

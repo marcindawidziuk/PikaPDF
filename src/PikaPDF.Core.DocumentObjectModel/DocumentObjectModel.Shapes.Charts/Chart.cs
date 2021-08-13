@@ -30,10 +30,11 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Internals;
-using MigraDoc.DocumentObjectModel.Visitors;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors;
 
-namespace MigraDoc.DocumentObjectModel.Shapes.Charts
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts
 {
     /// <summary>
     /// Represents charts with different types.

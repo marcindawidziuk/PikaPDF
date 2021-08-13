@@ -30,7 +30,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents a PDF cross-reference stream.

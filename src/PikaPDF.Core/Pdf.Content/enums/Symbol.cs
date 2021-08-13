@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf.Content
+namespace PikaPDF.Core.Pdf.Content.enums
 {
     /// <summary>
     /// Terminal symbols recognized by PDF content stream lexer.

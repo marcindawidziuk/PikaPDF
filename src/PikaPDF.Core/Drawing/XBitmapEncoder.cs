@@ -27,16 +27,14 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.Diagnostics;
-using System.IO;
-using PdfSharp.Internal;
 #if CORE
 #endif
-#if CORE_WITH_GDI
-using System.Drawing;
-using System.Drawing.Drawing2D;
+using System;
+using System.Diagnostics;
 using System.Drawing.Imaging;
+using System.IO;
+using PikaPDF.Core.Internal;
+#if CORE_WITH_GDI
 #endif
 #if GDI
 using System.Drawing;
@@ -52,7 +50,7 @@ using System.Windows.Media.Imaging;
 using Windows.UI.Xaml.Media.Imaging;
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Provides functionality to save a bitmap image in a specific format.

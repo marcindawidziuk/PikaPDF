@@ -32,7 +32,7 @@
 
 using System;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.enums
 {
     /// <summary>
     /// Specifies the format of a text.

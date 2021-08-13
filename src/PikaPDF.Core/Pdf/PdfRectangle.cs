@@ -30,18 +30,20 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 #endif
 #if WPF
 using System.Windows.Media;
 #endif
-using PdfSharp.Drawing;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Internal;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents a PDF rectangle value, that is internally an array with 4 real values.
@@ -366,7 +368,7 @@ namespace PdfSharp.Pdf
         }
 
         /// <summary>
-        /// Returns the rectangle as a string in the form «[x1 y1 x2 y2]».
+        /// Returns the rectangle as a string in the form Â«[x1 y1 x2 y2]Â».
         /// </summary>
         public override string ToString()
         {

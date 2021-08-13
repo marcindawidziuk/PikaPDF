@@ -31,13 +31,16 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using System.Text;
 using System.IO;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Security;
-using PdfSharp.Pdf.Internal;
+using System.Text;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO.enums;
+using PikaPDF.Core.Pdf.Security;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf.IO
+namespace PikaPDF.Core.Pdf.IO
 {
     /// <summary>
     /// Represents a writer for generation of PDF streams. 
@@ -420,7 +423,7 @@ namespace PdfSharp.Pdf.IO
 
             if (omitStream)
             {
-                WriteRaw("  «...stream content omitted...»\n");  // useful for debugging only
+                WriteRaw("  Â«...stream content omitted...Â»\n");  // useful for debugging only
             }
             else
             {

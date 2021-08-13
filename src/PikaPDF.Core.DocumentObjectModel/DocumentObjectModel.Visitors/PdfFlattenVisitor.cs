@@ -32,7 +32,7 @@
 
 using System.Collections.Generic;
 
-namespace MigraDoc.DocumentObjectModel.Visitors
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors
 {
     /// <summary>
     /// Flattens a document for PDF rendering.
@@ -156,14 +156,14 @@ namespace MigraDoc.DocumentObjectModel.Visitors
                                 }
                                 break;
 
-                            case '­': // soft hyphen.
+                            case 'Â­': // soft hyphen.
                                 if (currentString != "")
                                 {
                                     elements.InsertObject(idx + insertedObjects, new Text(currentString));
                                     ++insertedObjects;
                                     currentString = "";
                                 }
-                                elements.InsertObject(idx + insertedObjects, new Text("­"));
+                                elements.InsertObject(idx + insertedObjects, new Text("Â­"));
                                 ++insertedObjects;
                                 //currentString = "";
                                 break;

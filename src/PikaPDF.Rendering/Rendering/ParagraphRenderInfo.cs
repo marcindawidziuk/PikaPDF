@@ -28,9 +28,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Represents rendering information for a paragraph.

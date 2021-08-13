@@ -33,10 +33,11 @@
 using System;
 using System.Diagnostics;
 using System.Reflection;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums;
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals
 {
     /// <summary>
     /// Base class of all value descriptor classes.

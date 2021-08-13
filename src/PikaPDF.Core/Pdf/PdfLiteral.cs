@@ -28,16 +28,11 @@
 #endregion
 
 using System;
-using System.Collections;
-using System.Globalization;
-using System.Text;
-using System.IO;
-using PdfSharp.Drawing;
-using PdfSharp.Internal;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Internal;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents text that is written 'as it is' into the PDF stream. This class can lead to invalid PDF files.

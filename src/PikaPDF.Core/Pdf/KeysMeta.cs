@@ -28,12 +28,12 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Reflection;
-using PdfSharp.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Advanced;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Holds information about the value of a key in a dictionary. This information is used to create

@@ -1,9 +1,10 @@
-using MigraDoc.DocumentObjectModel;
-using MigraDoc.DocumentObjectModel.Tables;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums;
 
 #pragma warning disable 1591
 
-namespace MigraDoc.Rendering.UnitTest
+namespace PikaPDF.Rendering.Rendering.UnitTest
 {
     /// <summary>
     /// Summary description for TestTable.

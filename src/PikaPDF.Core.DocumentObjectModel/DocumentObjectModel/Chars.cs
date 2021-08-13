@@ -32,7 +32,7 @@
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Character table by name.
@@ -77,7 +77,7 @@ namespace MigraDoc.DocumentObjectModel
         public const char NumberSign = '#';
         public const char Question = '?';
         public const char Hyphen = '-';  // char(45)
-        public const char SoftHyphen = '­';  // char(173)
-        public const char Currency = '¤';
+        public const char SoftHyphen = 'Â­';  // char(173)
+        public const char Currency = 'Â¤';
     }
 }

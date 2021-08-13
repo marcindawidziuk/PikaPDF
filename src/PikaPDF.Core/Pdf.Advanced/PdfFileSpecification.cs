@@ -1,4 +1,4 @@
-﻿namespace PdfSharp.Pdf.Advanced
+﻿namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents a file specification dictionary.

@@ -34,7 +34,7 @@ using System;
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel.Tables
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums
 {
     /// <summary>
     /// Combinable flags to set Borders using the SetEdge function.

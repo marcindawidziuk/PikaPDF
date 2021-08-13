@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting.enums
 {
     /// <summary>
     /// Determines the position where the Tickmarks will be rendered.

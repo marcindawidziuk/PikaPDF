@@ -30,9 +30,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
-namespace MigraDoc.DocumentObjectModel.Fields
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields
 {
     /// <summary>
     /// NumPagesField is used to reference the number of all pages in the document.

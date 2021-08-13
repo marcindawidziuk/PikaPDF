@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting.enums
 {
     /// <summary>
     /// Used to determine the horizontal alignment of the axis title.

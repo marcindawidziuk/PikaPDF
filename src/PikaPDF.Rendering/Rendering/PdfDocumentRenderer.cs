@@ -29,14 +29,16 @@
 #endregion
 
 using System;
-using System.Reflection;
 using System.IO;
-using MigraDoc.DocumentObjectModel;
-using MigraDoc.Rendering.Resources;
-using PdfSharp.Pdf;
-using PdfSharp.Drawing;
+using System.Reflection;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.Rendering.Properties;
+using PikaPDF.Rendering.Rendering.Resources;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Provides the functionality to convert a MigraDoc document into PDF.

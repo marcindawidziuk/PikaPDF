@@ -32,7 +32,7 @@ using System.Runtime.InteropServices;
 
 // ReSharper disable InconsistentNaming
 
-namespace PdfSharp.Internal
+namespace PikaPDF.Core.Internal
 {
 #if CORE || GDI || WPF
     /// <summary>

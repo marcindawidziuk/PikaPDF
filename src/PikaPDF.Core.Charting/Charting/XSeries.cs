@@ -29,7 +29,7 @@
 
 using System.Collections;
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// Represents a series of data on the X-Axis.

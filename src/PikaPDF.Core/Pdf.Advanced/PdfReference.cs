@@ -33,9 +33,9 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents an indirect reference to a PdfObject.

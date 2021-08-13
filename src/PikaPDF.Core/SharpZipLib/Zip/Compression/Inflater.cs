@@ -38,10 +38,10 @@
 // exception statement from your version.
 
 using System;
-using PdfSharp.SharpZipLib.Checksums;
-using PdfSharp.SharpZipLib.Zip.Compression.Streams;
+using PikaPDF.Core.SharpZipLib.Checksums;
+using PikaPDF.Core.SharpZipLib.Zip.Compression.Streams;
 
-namespace PdfSharp.SharpZipLib.Zip.Compression
+namespace PikaPDF.Core.SharpZipLib.Zip.Compression
 {
     /// <summary>
     /// Inflater is used to decompress data that has been compressed according

@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// Represents the gridlines on the axes.

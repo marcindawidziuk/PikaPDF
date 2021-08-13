@@ -30,8 +30,10 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing.enums;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Represents a value and its unit of measure. The structure converts implicitly from and to

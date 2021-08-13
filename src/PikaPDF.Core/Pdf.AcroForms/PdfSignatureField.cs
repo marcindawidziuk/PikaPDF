@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf.AcroForms
+namespace PikaPDF.Core.Pdf.AcroForms
 {
     /// <summary>
     /// Represents the signature field.
@@ -60,7 +60,7 @@ namespace PdfSharp.Pdf.AcroForms
 
             /// <summary>
             /// (Required; inheritable) The name of the signature handler to be used for
-            /// authenticating the field’s contents, such as Adobe.PPKLite, Entrust.PPKEF,
+            /// authenticating the fieldâ€™s contents, such as Adobe.PPKLite, Entrust.PPKEF,
             /// CICI.SignIt, or VeriSign.PPKVS.
             /// </summary>
             [KeyInfo(KeyType.Name | KeyType.Required)]
@@ -108,7 +108,7 @@ namespace PdfSharp.Pdf.AcroForms
             public const string Location = "/Location";
 
             /// <summary>
-            /// (Optional) The reason for the signing, such as (I agree…).
+            /// (Optional) The reason for the signing, such as (I agreeâ€¦).
             /// </summary>
             [KeyInfo(KeyType.TextString | KeyType.Optional)]
             public const string Reason = "/Reason";

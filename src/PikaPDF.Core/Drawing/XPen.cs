@@ -28,7 +28,8 @@
 #endregion
 
 using System;
-using PdfSharp.Internal;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -43,7 +44,7 @@ using WpfBrush =System.Windows.Media.Brush;
 #if UWP
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     // TODO Free GDI objects (pens, brushes, ...) automatically without IDisposable.
     /// <summary>

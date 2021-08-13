@@ -31,9 +31,9 @@
 #endregion
 
 using System;
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
-namespace MigraDoc.DocumentObjectModel.Fields
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields
 {
     /// <summary>
     /// NumericFieldBase serves as a base for Numeric fields, which are: 

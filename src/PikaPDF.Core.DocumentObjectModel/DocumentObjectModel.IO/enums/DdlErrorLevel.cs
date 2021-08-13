@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO.enums
 {
     /// <summary>
     /// Specifies the severity of a DDL reader diagnostic.

@@ -34,12 +34,10 @@
 // exception statement from your version.
 
 using System;
-
 #if !NETCF_1_0 && !NETCF_2_0 && !DNC10
-using System.Runtime.Serialization;
 #endif
 
-namespace PdfSharp.SharpZipLib
+namespace PikaPDF.Core.SharpZipLib
 {
     /// <summary>
     /// SharpZipBaseException is the base exception class for the SharpZipLibrary.

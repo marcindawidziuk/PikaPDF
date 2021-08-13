@@ -28,13 +28,15 @@
 #endregion
 
 using System;
-using System.Collections.Generic;
 using System.Collections;
-using PdfSharp.Drawing;
+using System.Collections.Generic;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.root;
 
 // Review: CountOpen does not work. - StL/14-10-05
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents a collection of outlines.
@@ -241,7 +243,7 @@ namespace PdfSharp.Pdf
         }
 
         /// <summary>
-        /// Gets the <see cref="PdfSharp.Pdf.PdfOutline"/> at the specified index.
+        /// Gets the <see cref="PdfOutline"/> at the specified index.
         /// </summary>
         public PdfOutline this[int index]
         {

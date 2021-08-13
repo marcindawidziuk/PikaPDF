@@ -30,9 +30,8 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing.enums;
 #if CORE
-using System.Drawing;
 #endif
 #if GDI
 using System.Drawing;
@@ -41,7 +40,7 @@ using System.Drawing;
 using System.Windows.Media;
 #endif
 
-namespace PdfSharp.Fonts
+namespace PikaPDF.Core.Fonts
 {
     // The English terms font, font family, typeface, glyph etc. are sometimes confusingly used.
     // Here a short clarification by Wikipedia.

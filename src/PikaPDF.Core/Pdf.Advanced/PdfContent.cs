@@ -29,11 +29,11 @@
 
 using System;
 using System.Diagnostics;
-using PdfSharp.Drawing.Pdf;
-using PdfSharp.Pdf.Filters;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Drawing.Pdf;
+using PikaPDF.Core.Pdf.Filters;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents the content of a page. PDFsharp supports only one content stream per page.

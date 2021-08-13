@@ -28,9 +28,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Charting;
+using PikaPDF.Charting.Charting;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     /// <summary>
     /// The PlotAreaMapper class.
@@ -43,7 +43,7 @@ namespace MigraDoc.Rendering.ChartMapper
         public PlotAreaMapper()
         { }
 
-        void MapObject(PlotArea plotArea, DocumentObjectModel.Shapes.Charts.PlotArea domPlotArea)
+        void MapObject(PlotArea plotArea, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.PlotArea domPlotArea)
         {
             plotArea.BottomPadding = domPlotArea.BottomPadding.Point;
             plotArea.RightPadding = domPlotArea.RightPadding.Point;
@@ -56,7 +56,7 @@ namespace MigraDoc.Rendering.ChartMapper
                 FillFormatMapper.Map(plotArea.FillFormat, domPlotArea.FillFormat);
         }
 
-        internal static void Map(PlotArea plotArea, DocumentObjectModel.Shapes.Charts.PlotArea domPlotArea)
+        internal static void Map(PlotArea plotArea, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.PlotArea domPlotArea)
         {
             PlotAreaMapper mapper = new PlotAreaMapper();
             mapper.MapObject(plotArea, domPlotArea);

@@ -28,8 +28,10 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Pdf.Security.enums;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf.Security
+namespace PikaPDF.Core.Pdf.Security
 {
     /// <summary>
     /// Encapsulates access to the security settings of a PDF document.

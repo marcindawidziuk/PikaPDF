@@ -31,12 +31,13 @@
 
 using System;
 using System.Collections.Generic;
+using PikaPDF.Core.Fonts.OpenType.enums;
 
 //using Fixed = System.Int32;
 //using FWord = System.Int16;
 //using UFWord = System.UInt16;
 
-namespace PdfSharp.Fonts.OpenType
+namespace PikaPDF.Core.Fonts.OpenType
 {
     /// <summary>
     /// This table contains information that describes the glyphs in the font in the TrueType outline format.

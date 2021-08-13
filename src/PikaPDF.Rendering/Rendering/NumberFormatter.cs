@@ -31,9 +31,9 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using MigraDoc.Rendering.Resources;
+using PikaPDF.Rendering.Rendering.Resources;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Formats numbers roman or with letters.

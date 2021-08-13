@@ -29,11 +29,13 @@
 #endregion
 
 using System.Diagnostics;
-using MigraDoc.DocumentObjectModel;
-using MigraDoc.DocumentObjectModel.Tables;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Renders a single Border.

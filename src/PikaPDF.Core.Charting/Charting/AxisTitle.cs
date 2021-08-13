@@ -28,8 +28,9 @@
 #endregion
 
 using System;
+using PikaPDF.Charting.Charting.enums;
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// Represents the title of an axis.

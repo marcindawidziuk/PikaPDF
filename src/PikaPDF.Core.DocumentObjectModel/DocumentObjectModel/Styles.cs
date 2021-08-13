@@ -33,10 +33,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel.Internals;
-using MigraDoc.DocumentObjectModel.Visitors;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Represents the collection of all styles.
@@ -240,55 +241,55 @@ namespace MigraDoc.DocumentObjectModel
             style.ParagraphFormat.WidowControl = true;
             Add(style);
 
-            // Heading1 '‹berschrift 1' (Paragraph Style).
+            // Heading1 '√úberschrift 1' (Paragraph Style).
             style = new Style(StyleNames.Heading1, StyleNames.Normal);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level1;
             Add(style);
 
-            // Heading2 '‹berschrift 2' (Paragraph Style).
+            // Heading2 '√úberschrift 2' (Paragraph Style).
             style = new Style(StyleNames.Heading2, StyleNames.Heading1);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level2;
             Add(style);
 
-            // Heading3 '‹berschrift 3' (Paragraph Style).
+            // Heading3 '√úberschrift 3' (Paragraph Style).
             style = new Style(StyleNames.Heading3, StyleNames.Heading2);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level3;
             Add(style);
 
-            // Heading4 '‹berschrift 4' (Paragraph Style).
+            // Heading4 '√úberschrift 4' (Paragraph Style).
             style = new Style(StyleNames.Heading4, StyleNames.Heading3);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level4;
             Add(style);
 
-            // Heading5 '‹berschrift 5' (Paragraph Style).
+            // Heading5 '√úberschrift 5' (Paragraph Style).
             style = new Style(StyleNames.Heading5, StyleNames.Heading4);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level5;
             Add(style);
 
-            // Heading6 '‹berschrift 6' (Paragraph Style).
+            // Heading6 '√úberschrift 6' (Paragraph Style).
             style = new Style(StyleNames.Heading6, StyleNames.Heading5);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level6;
             Add(style);
 
-            // Heading7 '‹berschrift 7' (Paragraph Style).
+            // Heading7 '√úberschrift 7' (Paragraph Style).
             style = new Style(StyleNames.Heading7, StyleNames.Heading6);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level7;
             Add(style);
 
-            // Heading8 '‹berschrift 8' (Paragraph Style).
+            // Heading8 '√úberschrift 8' (Paragraph Style).
             style = new Style(StyleNames.Heading8, StyleNames.Heading7);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level8;
             Add(style);
 
-            // Heading9 '‹berschrift 9' (Paragraph Style).
+            // Heading9 '√úberschrift 9' (Paragraph Style).
             style = new Style(StyleNames.Heading9, StyleNames.Heading8);
             style._buildIn.Value = true;
             style.ParagraphFormat.OutlineLevel = OutlineLevel.Level9;
@@ -299,7 +300,7 @@ namespace MigraDoc.DocumentObjectModel
             style._buildIn.Value = true;
             Add(style);
 
-            // Footnote 'Fuﬂnote' (Paragraph Style).
+            // Footnote 'Fu√ünote' (Paragraph Style).
             style = new Style(StyleNames.Footnote, StyleNames.Normal);
             style._buildIn.Value = true;
             Add(style);
@@ -309,7 +310,7 @@ namespace MigraDoc.DocumentObjectModel
             style._buildIn.Value = true;
             Add(style);
 
-            // -33: Footer 'Fuﬂzeile' (Paragraph Style).
+            // -33: Footer 'Fu√üzeile' (Paragraph Style).
             style = new Style(StyleNames.Footer, StyleNames.Normal);
             style._buildIn.Value = true;
             Add(style);
@@ -319,7 +320,7 @@ namespace MigraDoc.DocumentObjectModel
             style._buildIn.Value = true;
             Add(style);
 
-            // InvalidStyleName 'Ung¸ltiger Formatvorlagenname' (Paragraph Style).
+            // InvalidStyleName 'Ung√ºltiger Formatvorlagenname' (Paragraph Style).
             style = new Style(StyleNames.InvalidStyleName, StyleNames.Normal);
             style._buildIn.Value = true;
             style.Font.Bold = true;

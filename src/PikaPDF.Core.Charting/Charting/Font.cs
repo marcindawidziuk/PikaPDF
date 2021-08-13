@@ -28,9 +28,10 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// Font represents the formatting of characters in a paragraph.

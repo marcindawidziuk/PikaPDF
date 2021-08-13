@@ -28,10 +28,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.root.enums;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Provides information necessary to render the page.

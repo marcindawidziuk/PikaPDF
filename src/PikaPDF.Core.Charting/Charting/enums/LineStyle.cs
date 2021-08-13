@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting.enums
 {
     /// <summary>
     /// Specifies the line style of the LineFormat object.

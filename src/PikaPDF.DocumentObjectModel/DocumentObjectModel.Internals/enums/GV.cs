@@ -32,7 +32,7 @@
 
 // ReSharper disable InconsistentNaming
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums
 {
     /// <summary>
     /// Indicates how to retrieve a value from a DocumentObject.

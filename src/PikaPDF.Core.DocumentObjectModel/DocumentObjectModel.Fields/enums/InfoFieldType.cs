@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.Fields
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields.enums
 {
     /// <summary>
     /// Specifies the information to be shown in the field.

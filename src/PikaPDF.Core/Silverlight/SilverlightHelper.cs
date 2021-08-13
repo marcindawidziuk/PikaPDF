@@ -33,7 +33,7 @@ using System.IO;
 using System.IO.IsolatedStorage;
 using System.Runtime.InteropServices;
 
-namespace PdfSharp.Silverlight
+namespace PikaPDF.Core.Silverlight
 {
     /// <summary>
     /// Useful stuff to show PDF files in Silverlight applications for 

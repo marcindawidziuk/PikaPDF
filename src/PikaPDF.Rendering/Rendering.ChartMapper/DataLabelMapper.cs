@@ -28,16 +28,17 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Charting;
+using PikaPDF.Charting.Charting;
+using PikaPDF.Charting.Charting.enums;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     internal class DataLabelMapper
     {
         private DataLabelMapper()
         { }
 
-        void MapObject(DataLabel dataLabel, DocumentObjectModel.Shapes.Charts.DataLabel domDataLabel)
+        void MapObject(DataLabel dataLabel, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.DataLabel domDataLabel)
         {
             if (!domDataLabel.IsNull("Style"))
                 FontMapper.Map(dataLabel.Font, domDataLabel.Document, domDataLabel.Style);
@@ -50,7 +51,7 @@ namespace MigraDoc.Rendering.ChartMapper
                 dataLabel.Type = (DataLabelType)domDataLabel.Type;
         }
 
-        internal static void Map(DataLabel dataLabel, DocumentObjectModel.Shapes.Charts.DataLabel domDataLabel)
+        internal static void Map(DataLabel dataLabel, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.DataLabel domDataLabel)
         {
             DataLabelMapper mapper = new DataLabelMapper();
             mapper.MapObject(dataLabel, domDataLabel);

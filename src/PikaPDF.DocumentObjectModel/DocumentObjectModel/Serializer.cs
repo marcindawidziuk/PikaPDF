@@ -35,9 +35,10 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Text;
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Object to be passed to the Serialize function of a DocumentObject to convert
@@ -282,7 +283,7 @@ namespace MigraDoc.DocumentObjectModel
                 {
                     // does not work
                     // if (IsBlankRequired(this .lastChar, _text[0]))
-                    //   _text = "·" + _text;
+                    //   _text = "Â·" + _text;
                 }
                 else
                 {
@@ -298,7 +299,7 @@ namespace MigraDoc.DocumentObjectModel
                 if (_linePos > LineBreakBeyond)
                 {
                     fLineBreak = true;
-                    //this .textWriter.Write("//¶");  // for debugging only
+                    //this .textWriter.Write("//Â¶");  // for debugging only
                 }
                 else
                     _lastChar = text[len - 1];

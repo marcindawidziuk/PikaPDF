@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf.Structure
+namespace PikaPDF.Core.Pdf.Structure
 {
     /// <summary>
     /// Represents a mark information dictionary.

@@ -27,9 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Drawing;
-
-namespace PdfSharp.Internal
+namespace PikaPDF.Core._internal
 {
     // In PDFsharp hybrid build both GDI and WPF is defined.
     // This is for development and testing only.

@@ -28,7 +28,7 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using MigraDoc.Rendering;
+
 //
 // [assembly: AssemblyTitle(VersionInfo.Title)]
 // [assembly: AssemblyDescription(VersionInfo.Description)]

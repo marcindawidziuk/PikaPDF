@@ -30,11 +30,11 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.DocumentObjectModel.Shapes.Charts;
-using MigraDoc.DocumentObjectModel.Tables;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
 
-namespace MigraDoc.DocumentObjectModel.Visitors
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors
 {
     /// <summary>
     /// Represents the base visitor for the DocumentObject.

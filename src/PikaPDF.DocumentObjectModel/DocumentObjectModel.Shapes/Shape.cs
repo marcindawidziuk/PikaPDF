@@ -30,9 +30,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.enums;
 
-namespace MigraDoc.DocumentObjectModel.Shapes
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes
 {
     /// <summary>
     /// Base Class for all positionable Classes.

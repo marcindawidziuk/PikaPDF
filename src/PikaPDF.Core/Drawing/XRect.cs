@@ -27,10 +27,6 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.Diagnostics;
-using System.Globalization;
-using System.Runtime.InteropServices;
 #if CORE
 #endif
 #if GDI
@@ -50,13 +46,19 @@ using SysPoint = Windows.Foundation.Point;
 using SysSize = Windows.Foundation.Size;
 using SysRect = Windows.Foundation.Rect;
 #endif
+using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Runtime.InteropServices;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Internal;
 #if !EDF_CORE
-using PdfSharp.Internal;
+
 #else
 using PdfSharp.Internal;
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Stores a set of four floating-point numbers that represent the location and size of a rectangle.

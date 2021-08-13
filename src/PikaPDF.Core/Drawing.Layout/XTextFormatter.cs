@@ -29,9 +29,11 @@
 
 using System;
 using System.Collections.Generic;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Drawing.Layout.enums;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Drawing.Layout
+namespace PikaPDF.Core.Drawing.Layout
 {
     /// <summary>
     /// Represents a very simple text formatter.
@@ -79,7 +81,7 @@ namespace PdfSharp.Drawing.Layout
                 _cyDescent = _lineSpace * _font.CellDescent / _font.CellSpace;
 
                 // HACK in XTextFormatter
-                _spaceWidth = _gfx.MeasureString("x x", value).Width;
+                _spaceWidth = _gfx.MeasureString("xÂ x", value).Width;
                 _spaceWidth -= _gfx.MeasureString("xx", value).Width;
             }
         }

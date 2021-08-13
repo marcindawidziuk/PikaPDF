@@ -30,10 +30,10 @@
 using System;
 using System.Diagnostics;
 using System.Text;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Internal;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     // TODO: Make code more readeable with PDF 1.7 strings: text string, ASCII string, byte string etc.
 

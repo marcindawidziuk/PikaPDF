@@ -29,15 +29,16 @@
 
 using System;
 using System.Diagnostics;
-using System.Resources;
 using System.Reflection;
-using PdfSharp.Drawing;
-using PdfSharp.Internal;
-using PdfSharp.Pdf;
+using System.Resources;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.root.enums;
 
 #pragma warning disable 1591
 
-namespace PdfSharp
+namespace PikaPDF.Core.root
 {
     /// <summary>
     /// The Pdf-Sharp-String-Resources.

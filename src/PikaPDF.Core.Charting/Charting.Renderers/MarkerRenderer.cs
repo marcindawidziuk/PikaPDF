@@ -28,9 +28,10 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
 
-namespace PdfSharp.Charting.Renderers
+namespace PikaPDF.Charting.Charting.Renderers
 {
     /// <summary>
     /// Represents a renderer for markers in line charts and legends.
@@ -146,7 +147,7 @@ namespace PdfSharp.Charting.Renderers
                         double outerCircle = size / 2;
                         double innerCircle = size / 5;
                         // outer circle
-                        double rad = -(Math.PI / 2); // 90°
+                        double rad = -(Math.PI / 2); // 90Â°
                         for (int idx = 0; idx < 10; idx += 2)
                         {
                             points[idx].X = pos.X + outerCircle * Math.Cos(rad);
@@ -155,7 +156,7 @@ namespace PdfSharp.Charting.Renderers
                         }
 
                         // inner circle
-                        rad = -(Math.PI / 4); // 45°
+                        rad = -(Math.PI / 4); // 45Â°
                         double x = innerCircle * Math.Cos(rad);
                         double y = innerCircle * Math.Sin(rad);
                         points[1].X = pos.X + x;

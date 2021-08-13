@@ -32,8 +32,9 @@
 
 using System;
 using System.Collections.Generic;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.IO.enums;
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO
 {
     internal class KeyWords
     {

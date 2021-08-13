@@ -28,12 +28,13 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
-#if !SILVERLIGHT
 using System.ComponentModel;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
+#if !SILVERLIGHT
 #endif
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// Represents a series of data on the chart.

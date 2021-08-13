@@ -32,7 +32,7 @@
 
 using System;
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals
 {
     /// <summary>
     /// Represents a nullable string value.

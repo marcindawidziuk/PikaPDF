@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Charting.Renderers
+namespace PikaPDF.Charting.Charting.Renderers
 {
     /// <summary>
     /// Represents a Y axis renderer used for charts of type BarStacked2D.

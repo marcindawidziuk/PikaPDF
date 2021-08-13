@@ -28,8 +28,9 @@
 #endregion
 
 using System;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf.Content
+namespace PikaPDF.Core.Pdf.Content
 {
     /// <summary>
     /// Exception thrown by ContentReader.

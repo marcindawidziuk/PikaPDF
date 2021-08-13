@@ -29,12 +29,12 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.IO;
-using PdfSharp.Fonts;
-using PdfSharp.Pdf.Filters;
+using System.Text;
+using PikaPDF.Core.Fonts;
+using PikaPDF.Core.Pdf.Filters;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents a ToUnicode map for composite font.

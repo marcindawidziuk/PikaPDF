@@ -30,16 +30,13 @@
 
 using System;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.Drawing;
 using System.Drawing.Printing;
-using PdfSharp;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel.Internals;
-using MigraDoc.DocumentObjectModel.Visitors;
-using MigraDoc.DocumentObjectModel.IO;
+using System.Runtime.InteropServices;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.root.enums;
 
-namespace MigraDoc.Rendering.Printing
+namespace PikaPDF.Rendering.Rendering.Printing
 {
     /// <summary>
     /// Represents a specialized System.Drawing.Printing.PrintDocument for MigraDoc documents.
@@ -48,7 +45,7 @@ namespace MigraDoc.Rendering.Printing
     public class MigraDocPrintDocument : PrintDocument
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:MigraDoc.Rendering.Printing.MigraDocPrintDocument"/> class. 
+        /// Initializes a new instance of the <see cref="T:PikaPDF.Rendering.Rendering.Printing.MigraDocPrintDocument"/> class. 
         /// </summary>
         public MigraDocPrintDocument()
         {
@@ -57,8 +54,8 @@ namespace MigraDoc.Rendering.Printing
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:MigraDoc.Rendering.Printing.MigraDocPrintDocument"/> class
-        /// with the specified <see cref="T:MigraDoc.Rendering.DocumentRenderer"/> object.
+        /// Initializes a new instance of the <see cref="T:PikaPDF.Rendering.Rendering.Printing.MigraDocPrintDocument"/> class
+        /// with the specified <see cref="T:PikaPDF.Rendering.Rendering.DocumentRenderer"/> object.
         /// </summary>
         public MigraDocPrintDocument(DocumentRenderer renderer)
         {

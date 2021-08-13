@@ -29,8 +29,9 @@
 
 using System;
 using System.ComponentModel;
+using PikaPDF.Core.Drawing.BarCodes.enums;
 
-namespace PdfSharp.Drawing.BarCodes
+namespace PikaPDF.Core.Drawing.BarCodes
 {
     /// <summary>
     /// Represents the base class of all bar codes.

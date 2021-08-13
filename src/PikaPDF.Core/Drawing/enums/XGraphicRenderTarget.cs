@@ -29,7 +29,7 @@
 
 // ReSharper disable InconsistentNaming
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing.enums
 {
     ///<summary>
     /// Determines whether rendering based on GDI+ or WPF.

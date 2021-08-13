@@ -33,7 +33,7 @@
 using System;
 using System.Text;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Provides functions for encoding and decoding of DDL text.

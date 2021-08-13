@@ -30,12 +30,16 @@
 // #??? Clean up
 
 using System;
-using System.Diagnostics;
-using System.Globalization;
 using System.ComponentModel;
-#if CORE || GDI
+using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Drawing2D;
+using System.Globalization;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Fonts;
+using PikaPDF.Core.Fonts.OpenType;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf.enums;
+#if CORE || GDI
 using GdiFontFamily = System.Drawing.FontFamily;
 using GdiFont = System.Drawing.Font;
 using GdiFontStyle = System.Drawing.FontStyle;
@@ -49,17 +53,13 @@ using WpfGlyphTypeface = System.Windows.Media.GlyphTypeface;
 #if UWP
 using UwpFontFamily = Windows.UI.Xaml.Media.FontFamily;
 #endif
-using PdfSharp.Fonts;
-using PdfSharp.Fonts.OpenType;
-using PdfSharp.Internal;
-using PdfSharp.Pdf;
 
 #if SILVERLIGHT
 #pragma warning disable 649
 #endif
 // ReSharper disable ConvertToAutoProperty
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Defines an object used to draw text.

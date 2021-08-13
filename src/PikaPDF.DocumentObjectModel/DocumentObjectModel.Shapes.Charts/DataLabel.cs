@@ -30,9 +30,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.enums;
 
-namespace MigraDoc.DocumentObjectModel.Shapes.Charts
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts
 {
     /// <summary>
     /// Represents a DataLabel of a Series

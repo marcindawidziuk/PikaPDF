@@ -32,9 +32,9 @@
 
 using System;
 using System.IO;
-using MigraDoc.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
 
-namespace MigraDoc.DocumentObjectModel.Shapes
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes
 {
     /// <summary>
     /// Represents an image in the document or paragraph.

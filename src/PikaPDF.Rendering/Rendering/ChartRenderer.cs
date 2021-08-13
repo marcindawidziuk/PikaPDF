@@ -28,13 +28,17 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MigraDoc.DocumentObjectModel.Internals;
-using MigraDoc.DocumentObjectModel.Tables;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.DocumentObjectModel.Shapes.Charts;
+using PikaPDF.Charting.Charting;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums;
+using Chart = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Chart;
+using FillFormat = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.FillFormat;
+using LineFormat = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.LineFormat;
+using PlotArea = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.PlotArea;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Renders a chart to an XGraphics object.
@@ -344,7 +348,7 @@ namespace MigraDoc.Rendering
 
         void RenderPlotArea(PlotArea area, Rectangle rect)
         {
-            PdfSharp.Charting.ChartFrame chartFrame = ((ChartFormatInfo)_renderInfo.FormatInfo).ChartFrame;
+            ChartFrame chartFrame = ((ChartFormatInfo)_renderInfo.FormatInfo).ChartFrame;
 
             XUnit top = rect.Y;
             top += area.TopPadding;

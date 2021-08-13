@@ -33,7 +33,7 @@
 using System.IO;
 using System.Text;
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO
 {
     /// <summary>
     /// Represents the MigraDoc DDL writer.

@@ -28,10 +28,12 @@
 #endregion
 
 using System.Collections.Generic;
-using PdfSharp.Drawing;
-using PdfSharp.Charting.Renderers;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Charting.Charting.Renderers;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// Represents the frame which holds one or more charts.

@@ -31,11 +31,12 @@
 #define CACHE_FONTS_
 
 using System;
-using PdfSharp.Pdf;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Helps measuring and handling fonts.

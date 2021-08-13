@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf.Annotations
+namespace PikaPDF.Core.Pdf.Annotations.enums
 {
     /// <summary>
     /// Specifies the predefined icon names of rubber stamp annotations.

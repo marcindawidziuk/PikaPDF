@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Pdf.Content.Objects
+namespace PikaPDF.Core.Pdf.Content.Objects.@enum
 {
     /// <summary>
     /// Specifies the group of operations the op-code belongs to.

@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.Shapes
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.enums
 {
     /// <summary>
     /// Specifies how the shape object should be placed between the other elements.

@@ -31,13 +31,15 @@
 #endregion
 
 using System;
-using System.Collections.Generic;
 using System.Collections;
-using MigraDoc.DocumentObjectModel.Internals;
+using System.Collections.Generic;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums;
 
 #pragma warning disable 1591
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// A Borders collection represents the eight border objects used for paragraphs, tables etc.

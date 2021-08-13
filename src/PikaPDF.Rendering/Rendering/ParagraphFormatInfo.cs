@@ -29,11 +29,11 @@
 #endregion
 
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel.Shapes;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Vertical measurements of a paragraph line.

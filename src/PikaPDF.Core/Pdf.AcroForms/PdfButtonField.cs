@@ -30,9 +30,9 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using PdfSharp.Pdf.Annotations;
+using PikaPDF.Core.Pdf.Annotations;
 
-namespace PdfSharp.Pdf.AcroForms
+namespace PikaPDF.Core.Pdf.AcroForms
 {
     /// <summary>
     /// Represents the base class for all button fields.

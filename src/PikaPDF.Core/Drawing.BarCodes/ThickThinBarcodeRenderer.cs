@@ -28,8 +28,9 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 using System;
+using PikaPDF.Core.Drawing.BarCodes.enums;
 
-namespace PdfSharp.Drawing.BarCodes
+namespace PikaPDF.Core.Drawing.BarCodes
 {
     /// <summary>
     /// Internal base class for several bar code types.

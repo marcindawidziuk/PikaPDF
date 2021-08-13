@@ -29,6 +29,10 @@
 
 using System;
 using System.IO;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -37,11 +41,8 @@ using System.Drawing.Imaging;
 #if WPF
 using System.Windows.Media;
 #endif
-using PdfSharp.Internal;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.IO;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Represents a so called 'PDF form external object', which is typically an imported page of an external

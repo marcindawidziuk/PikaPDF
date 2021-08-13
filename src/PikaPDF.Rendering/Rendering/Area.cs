@@ -29,9 +29,9 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Abstract base class for all areas to render in.

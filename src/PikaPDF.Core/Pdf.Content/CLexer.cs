@@ -28,15 +28,16 @@
 #endregion
 
 using System;
-using System.Globalization;
 using System.Diagnostics;
-using System.Text;
+using System.Globalization;
 using System.IO;
-using PdfSharp.Internal;
+using System.Text;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf.Content.enums;
 
 #pragma warning disable 1591
 
-namespace PdfSharp.Pdf.Content
+namespace PikaPDF.Core.Pdf.Content
 {
     /// <summary>
     /// Lexical analyzer for PDF content files. Adobe specifies no grammar, but it seems that it

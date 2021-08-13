@@ -31,7 +31,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace PdfSharp.Pdf.IO
+namespace PikaPDF.Core.Pdf.IO
 {
     /// <summary>
     /// Represents the stack for the shift-reduce parser. It seems that it is only needed for

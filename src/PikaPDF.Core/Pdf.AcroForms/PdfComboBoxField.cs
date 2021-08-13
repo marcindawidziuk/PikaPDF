@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Pdf.AcroForms
+namespace PikaPDF.Core.Pdf.AcroForms
 {
     /// <summary>
     /// Represents the combo box field.
@@ -64,7 +64,7 @@ namespace PdfSharp.Pdf.AcroForms
                 {
                     string key = ValueInOptArray(value);
                     Elements.SetString(Keys.V, key);
-                    Elements.SetInteger("/I", value); //R080304 !!!!!!! sonst reagiert die Combobox überhaupt nicht !!!!!
+                    Elements.SetInteger("/I", value); //R080304 !!!!!!! sonst reagiert die Combobox Ã¼berhaupt nicht !!!!!
                 }
             }
         }
@@ -89,7 +89,7 @@ namespace PdfSharp.Pdf.AcroForms
                         //R080317 noch nicht rund
                         try
                         {
-                            //anhängen
+                            //anhÃ¤ngen
                             ((PdfArray)(((PdfItem[])(Elements.Values))[2])).Elements.Add(Value);
                             SelectedIndex = SelectedIndex;
                         }

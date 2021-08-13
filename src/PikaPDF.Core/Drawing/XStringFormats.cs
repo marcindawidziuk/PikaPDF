@@ -27,6 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
+using PikaPDF.Core.Drawing.enums;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -35,7 +36,7 @@ using System.Drawing.Drawing2D;
 using System.Windows.Media;
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Represents predefined text layouts.

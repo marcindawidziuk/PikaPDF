@@ -29,9 +29,9 @@
 
 using System.Collections.Generic;
 using System.IO;
-using PdfSharp.Pdf;
+using PikaPDF.Core.Pdf;
 
-namespace PdfSharp.Drawing.Internal
+namespace PikaPDF.Core.Drawing.Internal
 {
     /// <summary>
     /// The class that imports images of various formats.

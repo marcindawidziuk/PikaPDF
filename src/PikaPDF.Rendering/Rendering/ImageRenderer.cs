@@ -29,13 +29,15 @@
 #endregion
 
 using System;
-using System.IO;
 using System.Diagnostics;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.Rendering.Resources;
+using System.IO;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.Rendering.Rendering.enums;
+using PikaPDF.Rendering.Rendering.Resources;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Renders images.

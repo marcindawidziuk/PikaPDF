@@ -30,7 +30,7 @@
 using System;
 using System.Diagnostics;
 
-namespace PdfSharp.Pdf.Filters
+namespace PikaPDF.Core.Pdf.Filters
 {
     /// <summary>
     /// Applies standard filters to streams.

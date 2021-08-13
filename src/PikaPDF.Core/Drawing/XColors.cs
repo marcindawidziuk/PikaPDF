@@ -27,6 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
+using PikaPDF.Core.Drawing.enums;
 #if GDI
 using System.Drawing;
 #endif
@@ -34,7 +35,7 @@ using System.Drawing;
 using System.Windows.Media;
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     ///<summary>
     /// Represents a set of 141 pre-defined RGB colors. Incidentally the values are the same

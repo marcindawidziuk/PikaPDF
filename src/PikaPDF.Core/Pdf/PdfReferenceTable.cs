@@ -28,13 +28,13 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.IO;
+using System.Diagnostics;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     // NOT YET IN USE ANYMORE. REPLACEED PdfSharp.Pdf.Advanced.PdfCrossReferenceTable.
 

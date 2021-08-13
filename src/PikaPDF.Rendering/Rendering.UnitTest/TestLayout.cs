@@ -1,8 +1,8 @@
-using MigraDoc.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
 
 #pragma warning disable 1591
 
-namespace MigraDoc.Rendering.UnitTest
+namespace PikaPDF.Rendering.Rendering.UnitTest
 {
     /// <summary>
     /// Summary description for TestLayout.

@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Pdf.IO
+namespace PikaPDF.Core.Pdf.IO.enums
 {
     /// <summary>
     /// INTERNAL USE ONLY.

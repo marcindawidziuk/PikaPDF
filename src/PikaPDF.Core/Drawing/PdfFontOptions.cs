@@ -28,6 +28,7 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Pdf.enums;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -35,9 +36,8 @@ using System.Drawing.Drawing2D;
 #if WPF
 using System.Windows.Media;
 #endif
-using PdfSharp.Pdf;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Specifies details about how the font is used in PDF creation.

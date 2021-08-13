@@ -28,6 +28,8 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.Pdf;
 #if GDI
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -35,10 +37,8 @@ using System.Drawing.Imaging;
 #if WPF
 using System.Windows.Media;
 #endif
-using PdfSharp.Drawing;
-using PdfSharp.Drawing.Pdf;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents a shading pattern dictionary.
@@ -90,7 +90,7 @@ namespace PdfSharp.Pdf.Advanced
             public const string PatternType = "/PatternType";
 
             /// <summary>
-            /// (Required) A shading object (see below) defining the shading pattern’s gradient fill.
+            /// (Required) A shading object (see below) defining the shading patternâ€™s gradient fill.
             /// </summary>
             [KeyInfo(KeyType.Dictionary | KeyType.Required)]
             public const string Shading = "/Shading";

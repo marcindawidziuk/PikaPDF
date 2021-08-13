@@ -34,18 +34,20 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Text;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.IO.enums;
 
 /*
   ddl = <document> | <empty>
   
   table-element:
-    \table «attributes»opt { «columns-element» «rows-element» }
+    \table Â«attributesÂ»opt { Â«columns-elementÂ» Â«rows-elementÂ» }
 
   table-element:
-    \table «attributes»opt { «columns-element» «rows-element» }
+    \table Â«attributesÂ»opt { Â«columns-elementÂ» Â«rows-elementÂ» }
 */
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO
 {
     /// <summary>
     /// DdlScanner
@@ -291,7 +293,7 @@ namespace MigraDoc.DocumentObjectModel.IO
                 //  sym = Symbol.Question;
                 //  break;
 
-                case '¤':
+                case 'Â¤':
                     sym = Symbol.Currency; //??? used in DDL?
                     break;
 
@@ -1305,7 +1307,7 @@ namespace MigraDoc.DocumentObjectModel.IO
                 //  sym = Symbol.Question;
                 //  break;
 
-                case '¤':
+                case 'Â¤':
                     sym = Symbol.Currency; //??? used in DDL?
                     break;
 
@@ -1400,7 +1402,7 @@ namespace MigraDoc.DocumentObjectModel.IO
 
 
         /// <summary>
-        /// Scans verbatim strings like «@"String with ""quoted"" text"».
+        /// Scans verbatim strings like Â«@"String with ""quoted"" text"Â».
         /// </summary>
         protected string ScanVerbatimStringLiteral()
         {
@@ -1425,7 +1427,7 @@ namespace MigraDoc.DocumentObjectModel.IO
         }
 
         /// <summary>
-        /// Scans regular string literals like «"String with \"escaped\" text"».
+        /// Scans regular string literals like Â«"String with \"escaped\" text"Â».
         /// </summary>
         protected string ScanStringLiteral()
         {

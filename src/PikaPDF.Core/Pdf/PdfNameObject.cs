@@ -29,9 +29,10 @@
 
 using System;
 using System.Diagnostics;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents an indirect name value. This type is not used by PDFsharp. If it is imported from

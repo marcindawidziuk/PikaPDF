@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Drawing.Internal
+namespace PikaPDF.Core.Drawing.Internal
 {
     internal abstract class ImageImporterRoot
     {

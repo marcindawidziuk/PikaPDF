@@ -30,7 +30,7 @@
 
 using System;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering.enums
 {
     /// <summary>
     /// Determines the parts of a page to be rendered.

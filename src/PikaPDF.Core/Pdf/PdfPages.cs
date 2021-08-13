@@ -28,15 +28,16 @@
 #endregion
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Collections;
-using PdfSharp.Events;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Annotations;
+using PikaPDF.Core.Events;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Annotations;
+using PikaPDF.Core.Pdf.IO.enums;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents the pages of the document.

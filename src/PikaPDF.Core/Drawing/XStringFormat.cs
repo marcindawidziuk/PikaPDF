@@ -28,6 +28,7 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Drawing.enums;
 #if CORE
 #endif
 #if GDI
@@ -38,7 +39,7 @@ using System.Drawing.Drawing2D;
 using System.Windows.Media;
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
 #if true_
     /// <summary>

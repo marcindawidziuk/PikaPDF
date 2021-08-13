@@ -31,12 +31,14 @@
 #endregion
 
 using System;
-using MigraDoc.DocumentObjectModel.Internals;
-using MigraDoc.DocumentObjectModel.Visitors;
-using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.DocumentObjectModel.Shapes.Charts;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors;
 
-namespace MigraDoc.DocumentObjectModel.Tables
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables
 {
     /// <summary>
     /// Represents a cell of a table.

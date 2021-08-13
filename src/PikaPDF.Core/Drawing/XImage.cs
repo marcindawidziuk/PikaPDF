@@ -29,10 +29,15 @@
 
 using System;
 using System.Diagnostics;
-using System.IO;
-using PdfSharp.Pdf;
-#if CORE
 using System.Drawing;
+using System.IO;
+using PikaPDF.Core.Drawing.Internal;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.root;
+#if CORE
 #endif
 #if GDI
 using System.Drawing;
@@ -47,16 +52,12 @@ using System.Windows.Media.Imaging;
 #if NETFX_CORE || UWP
 using Windows.UI.Xaml.Media.Imaging;
 #endif
-using PdfSharp.Drawing.Internal;
-using PdfSharp.Internal;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Advanced;
 
 // WPFHACK
 #pragma warning disable 0169
 #pragma warning disable 0649
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     [Flags]
     internal enum XImageState

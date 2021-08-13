@@ -27,9 +27,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf.Actions
+namespace PikaPDF.Core.Pdf.Actions
 {
     /// <summary>
     /// Represents a PDF Goto action.
@@ -92,7 +92,7 @@ namespace PdfSharp.Pdf.Actions
             //public const string S = "/S";
 
             /// <summary>
-            /// (Required) The destination to jump to (see Section 8.2.1, ìDestinationsî).
+            /// (Required) The destination to jump to (see Section 8.2.1, ‚ÄúDestinations‚Äù).
             /// </summary>
             [KeyInfo(KeyType.Name | KeyType.ByteString | KeyType.Array | KeyType.Required)]
             public const string D = "/D";

@@ -30,15 +30,17 @@
 
 using System;
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel;
-using PdfSharp.Pdf;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel.Visitors;
-using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.DocumentObjectModel.Tables;
-using MigraDoc.Rendering.Resources;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Pdf;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
+using PikaPDF.Rendering.Rendering.enums;
+using PikaPDF.Rendering.Rendering.Resources;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Provides methods to render the document or single parts of it to a XGraphics object.

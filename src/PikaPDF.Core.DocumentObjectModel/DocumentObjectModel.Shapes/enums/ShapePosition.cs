@@ -30,7 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel.Shapes
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.enums
 {
     /// <summary>
     /// Specifies the position of a shape. Values are used for both LeftPositon and TopPosition.

@@ -29,13 +29,13 @@
 #endregion
 
 using System;
-using System.Resources;
 using System.Reflection;
-#if DEBUG
+using System.Resources;
 using System.Text.RegularExpressions;
+#if DEBUG
 #endif
 
-namespace MigraDoc.Rendering.Resources
+namespace PikaPDF.Rendering.Rendering.Resources
 {
     /// <summary>
     /// Provides diagnostic messages taken from the resources.

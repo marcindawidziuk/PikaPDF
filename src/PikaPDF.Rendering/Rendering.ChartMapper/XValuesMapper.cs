@@ -28,9 +28,12 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Charting;
+using PikaPDF.Charting.Charting;
+using XSeries = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.XSeries;
+using XSeriesElements = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.XSeriesElements;
+using XValue = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.XValue;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     /// <summary>
     /// The XValuesMapper class.
@@ -43,13 +46,13 @@ namespace MigraDoc.Rendering.ChartMapper
         public XValuesMapper()
         { }
 
-        void MapObject(XValues xValues, DocumentObjectModel.Shapes.Charts.XValues domXValues)
+        void MapObject(XValues xValues, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.XValues domXValues)
         {
-            foreach (DocumentObjectModel.Shapes.Charts.XSeries domXSeries in domXValues)
+            foreach (XSeries domXSeries in domXValues)
             {
-                XSeries xSeries = xValues.AddXSeries();
-                DocumentObjectModel.Shapes.Charts.XSeriesElements domXSeriesElements = domXSeries.GetValue("XSeriesElements") as DocumentObjectModel.Shapes.Charts.XSeriesElements;
-                foreach (DocumentObjectModel.Shapes.Charts.XValue domXValue in domXSeriesElements)
+                Charting.Charting.XSeries xSeries = xValues.AddXSeries();
+                XSeriesElements domXSeriesElements = domXSeries.GetValue("XSeriesElements") as XSeriesElements;
+                foreach (XValue domXValue in domXSeriesElements)
                 {
                     if (domXValue == null)
                         xSeries.AddBlank();
@@ -59,7 +62,7 @@ namespace MigraDoc.Rendering.ChartMapper
             }
         }
 
-        internal static void Map(XValues xValues, DocumentObjectModel.Shapes.Charts.XValues domXValues)
+        internal static void Map(XValues xValues, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.XValues domXValues)
         {
             XValuesMapper mapper = new XValuesMapper();
             mapper.MapObject(xValues, domXValues);

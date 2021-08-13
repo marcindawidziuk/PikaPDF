@@ -37,12 +37,11 @@
 // exception statement from your version.
 
 using System;
-
 #if false//!NETCF_1_0 && !NETCF_2_0
 using System.Runtime.Serialization;
 #endif
 
-namespace PdfSharp.SharpZipLib.Zip
+namespace PikaPDF.Core.SharpZipLib.Zip
 {
     /// <summary>
     /// Represents exception conditions specific to Zip archive handling

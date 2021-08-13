@@ -31,10 +31,13 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Text;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf.Security;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.Pdf.Security;
 
-namespace PdfSharp.Pdf.Internal
+namespace PikaPDF.Core.Pdf.Internal
 {
     /// <summary>
     /// Groups a set of static encoding helper functions.
@@ -464,7 +467,7 @@ namespace PdfSharp.Pdf.Internal
         }
 
         /// <summary>
-        /// Converts WinAnsi to DocEncode characters. Incomplete, just maps € and some other characters.
+        /// Converts WinAnsi to DocEncode characters. Incomplete, just maps â‚¬ and some other characters.
         /// </summary>
         static byte[] docencode_______ = new byte[256]
         {

@@ -31,8 +31,9 @@
 #endregion
 
 using System;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals
 {
     /// <summary>
     /// Represents a nullable Enum value.
@@ -64,8 +65,8 @@ namespace MigraDoc.DocumentObjectModel.Internals
             set
             {
                 // TODO Remove German remarks!
-                //TODO: Klasse Character so ‰ndern, dass symbolName und char in unterschiedlichen Feldern gespeichert werden.
-                //Diese Spezialbehandlung entf‰llt dann.
+                //TODO: Klasse Character so √§ndern, dass symbolName und char in unterschiedlichen Feldern gespeichert werden.
+                //Diese Spezialbehandlung entf√§llt dann.
                 if (_type == typeof(SymbolName))
                 {
                     //          if (Enum.IsDefined(this .type, (uint)value))

@@ -1,6 +1,7 @@
-using MigraDoc.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
 
-namespace MigraDoc.Rendering.UnitTest
+namespace PikaPDF.Rendering.Rendering.UnitTest
 {
     /// <summary>
     /// Summary description for ParagraphRenderer.

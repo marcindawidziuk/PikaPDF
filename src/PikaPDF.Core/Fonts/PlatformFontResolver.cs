@@ -27,12 +27,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
 using System.Diagnostics;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
 #if CORE || GDI
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using GdiFontFamily = System.Drawing.FontFamily;
 using GdiFont = System.Drawing.Font;
 using GdiFontStyle = System.Drawing.FontStyle;
 #endif
@@ -45,12 +43,11 @@ using WpfTypeface = System.Windows.Media.Typeface;
 using WpfGlyphTypeface = System.Windows.Media.GlyphTypeface;
 using WpfStyleSimulations = System.Windows.Media.StyleSimulations;
 #endif
-using PdfSharp.Drawing;
 
 #pragma warning disable 1591
 // ReSharper disable RedundantNameQualifier
 
-namespace PdfSharp.Fonts
+namespace PikaPDF.Core.Fonts
 {
     /// <summary>
     /// Default platform specific font resolving.

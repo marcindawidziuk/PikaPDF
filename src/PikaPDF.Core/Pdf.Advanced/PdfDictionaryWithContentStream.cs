@@ -29,6 +29,7 @@
 
 using System;
 using System.Diagnostics;
+using PikaPDF.Core.Drawing;
 #if GDI
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -36,9 +37,8 @@ using System.Drawing.Imaging;
 #if WPF
 using System.Windows.Media;
 #endif
-using PdfSharp.Drawing;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents a base class for dictionaries with a content stream.

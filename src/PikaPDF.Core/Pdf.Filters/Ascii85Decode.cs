@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Pdf.Filters
+namespace PikaPDF.Core.Pdf.Filters
 {
     /// <summary>
     /// Implements the ASCII85Decode filter.

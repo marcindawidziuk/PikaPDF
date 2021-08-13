@@ -28,9 +28,10 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf.Annotations.enums;
 
-namespace PdfSharp.Pdf.Annotations
+namespace PikaPDF.Core.Pdf.Annotations
 {
     /// <summary>
     /// Represents a rubber stamp annotation.

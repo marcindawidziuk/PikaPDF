@@ -31,7 +31,7 @@ using System;
 using System.Diagnostics;
 using System.Text;
 
-namespace PdfSharp.Pdf.Internal
+namespace PikaPDF.Core.Pdf.Internal
 {
     /// <summary>
     /// An encoder for PDF DocEncoding.

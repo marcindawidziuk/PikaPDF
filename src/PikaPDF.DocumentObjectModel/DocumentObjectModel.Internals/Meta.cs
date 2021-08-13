@@ -32,8 +32,9 @@
 
 using System;
 using System.Reflection;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums;
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals
 {
     /// <summary>
     /// Meta class for document objects.

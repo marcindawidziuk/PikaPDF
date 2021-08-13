@@ -30,11 +30,13 @@
 
 using System;
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel.Tables;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Represents a formatted cell.

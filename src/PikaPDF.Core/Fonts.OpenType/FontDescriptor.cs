@@ -35,15 +35,14 @@ using System.Drawing.Drawing2D;
 using System.Windows;
 using System.Windows.Media;
 #endif
-using PdfSharp.Pdf.Internal;
-using PdfSharp.Fonts;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
 #if !EDF_CORE
-using PdfSharp.Drawing;
 #endif
 
 #pragma warning disable 0649
 
-namespace PdfSharp.Fonts.OpenType
+namespace PikaPDF.Core.Fonts.OpenType
 {
     // TODO: Needs to be refactored #???
     /// <summary>

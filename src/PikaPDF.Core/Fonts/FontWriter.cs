@@ -29,7 +29,7 @@
 
 using System.IO;
 
-namespace PdfSharp.Fonts
+namespace PikaPDF.Core.Fonts
 {
     /// <summary>
     /// Represents a writer for generation of font file streams. 

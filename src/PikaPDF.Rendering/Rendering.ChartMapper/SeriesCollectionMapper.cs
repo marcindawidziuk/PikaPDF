@@ -28,10 +28,15 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Drawing;
-using PdfSharp.Charting;
+using PikaPDF.Charting.Charting;
+using PikaPDF.Charting.Charting.enums;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using Chart = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Chart;
+using Point = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Point;
+using Series = PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes.Charts.Series;
 
-namespace MigraDoc.Rendering.ChartMapper
+namespace PikaPDF.Rendering.Rendering.ChartMapper
 {
     /// <summary>
     /// The SeriesCollectionMapper class.
@@ -44,16 +49,16 @@ namespace MigraDoc.Rendering.ChartMapper
         public SeriesCollectionMapper()
         { }
 
-        void MapObject(SeriesCollection seriesCollection, DocumentObjectModel.Shapes.Charts.SeriesCollection domSeriesCollection)
+        void MapObject(SeriesCollection seriesCollection, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.SeriesCollection domSeriesCollection)
         {
-            foreach (DocumentObjectModel.Shapes.Charts.Series domSeries in domSeriesCollection)
+            foreach (Series domSeries in domSeriesCollection)
             {
-                Series series = seriesCollection.AddSeries();
+                Charting.Charting.Series series = seriesCollection.AddSeries();
                 series.Name = domSeries.Name;
 
                 if (domSeries.IsNull("ChartType"))
                 {
-                    DocumentObjectModel.Shapes.Charts.Chart chart = (DocumentObjectModel.Shapes.Charts.Chart)DocumentObjectModel.DocumentRelations.GetParentOfType(domSeries, typeof(DocumentObjectModel.Shapes.Charts.Chart));
+                    Chart chart = (Chart)DocumentRelations.GetParentOfType(domSeries, typeof(Chart));
                     series.ChartType = (ChartType)chart.Type;
                 }
                 else
@@ -93,11 +98,11 @@ namespace MigraDoc.Rendering.ChartMapper
                 if (!domSeries.IsNull("MarkerStyle"))
                     series.MarkerStyle = (MarkerStyle)domSeries.MarkerStyle;
 
-                foreach (DocumentObjectModel.Shapes.Charts.Point domPoint in domSeries.Elements)
+                foreach (Point domPoint in domSeries.Elements)
                 {
                     if (domPoint != null)
                     {
-                        Point point = series.Add(domPoint.Value);
+                        Charting.Charting.Point point = series.Add(domPoint.Value);
                         FillFormatMapper.Map(point.FillFormat, domPoint.FillFormat);
                         LineFormatMapper.Map(point.LineFormat, domPoint.LineFormat);
                     }
@@ -107,7 +112,7 @@ namespace MigraDoc.Rendering.ChartMapper
             }
         }
 
-        internal static void Map(SeriesCollection seriesCollection, DocumentObjectModel.Shapes.Charts.SeriesCollection domSeriesCollection)
+        internal static void Map(SeriesCollection seriesCollection, DocumentObjectModel.DocumentObjectModel.Shapes.Charts.SeriesCollection domSeriesCollection)
         {
             SeriesCollectionMapper mapper = new SeriesCollectionMapper();
             mapper.MapObject(seriesCollection, domSeriesCollection);

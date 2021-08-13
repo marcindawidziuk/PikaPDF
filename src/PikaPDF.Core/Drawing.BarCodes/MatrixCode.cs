@@ -29,8 +29,9 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Drawing.BarCodes.enums;
 
-namespace PdfSharp.Drawing.BarCodes
+namespace PikaPDF.Core.Drawing.BarCodes
 {
     /// <summary>
     /// Represents the base class of all 2D codes.

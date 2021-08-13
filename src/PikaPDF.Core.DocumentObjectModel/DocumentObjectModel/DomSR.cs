@@ -34,11 +34,12 @@ using System;
 using System.Diagnostics;
 using System.Reflection;
 using System.Resources;
-#if DEBUG
 using System.Text.RegularExpressions;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+#if DEBUG
 #endif
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// String resources of MigraDoc.DocumentObjectModel. Provides all localized text strings

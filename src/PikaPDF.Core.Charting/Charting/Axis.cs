@@ -28,11 +28,12 @@
 #endregion
 
 using System;
-#if !WINDOWS_PHONE
 using System.ComponentModel;
+using PikaPDF.Charting.Charting.enums;
+#if !WINDOWS_PHONE
 #endif
 
-namespace PdfSharp.Charting
+namespace PikaPDF.Charting.Charting
 {
     /// <summary>
     /// This class represents an axis in a chart.

@@ -28,9 +28,11 @@
 #endregion
 
 using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
-using System.ComponentModel;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 #endif
@@ -44,7 +46,7 @@ using UwpColor = Windows.UI.Color;
 
 // ReSharper disable RedundantNameQualifier
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     ///<summary>
     /// Represents a RGB, CMYK, or gray scale color.

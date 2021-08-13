@@ -27,10 +27,11 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System.Diagnostics;
 using System.Collections.Generic;
+using System.Diagnostics;
+using PikaPDF.Core.Pdf.Content.Objects.@enum;
 
-namespace PdfSharp.Pdf.Content.Objects
+namespace PikaPDF.Core.Pdf.Content.Objects
 {
     /// <summary>
     /// Represents a PDF content stream operator description.

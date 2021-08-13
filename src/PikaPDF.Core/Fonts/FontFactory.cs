@@ -28,13 +28,13 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Fonts.OpenType;
+using PikaPDF.Core.Internal;
 #if CORE || GDI
-using System.Drawing;
-using GdiFontFamily = System.Drawing.FontFamily;
-using GdiFont = System.Drawing.Font;
 #endif
 #if WPF
 using System.Windows;
@@ -44,14 +44,11 @@ using WpfFontFamily = System.Windows.Media.FontFamily;
 using WpfGlyphTypeface = System.Windows.Media.GlyphTypeface;
 using WpfTypeface = System.Windows.Media.Typeface;
 #endif
-using PdfSharp.Drawing;
-using PdfSharp.Fonts.OpenType;
-using PdfSharp.Internal;
 
 #pragma warning disable 1591
 // ReSharper disable RedundantNameQualifier
 
-namespace PdfSharp.Fonts
+namespace PikaPDF.Core.Fonts
 {
     /// <summary>
     /// Provides functionality to map a fontface request to a physical font.

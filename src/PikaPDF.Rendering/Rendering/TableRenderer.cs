@@ -32,14 +32,17 @@
 
 using System;
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel.Internals;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel;
-using MigraDoc.DocumentObjectModel.Fields;
-using MigraDoc.DocumentObjectModel.Visitors;
-using MigraDoc.DocumentObjectModel.Tables;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Tables.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors;
+using PikaPDF.Rendering.Rendering.enums;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     ///   Renders a table to an XGraphics object.

@@ -27,9 +27,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.DocumentObjectModel
+using PikaPDF.DocumentObjectModel.Properties;
+
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
-    using MigraDoc;
     internal class VersionInfo
     {
         public const string Title = "MigraDoc.DocumentObjectModel.dll";

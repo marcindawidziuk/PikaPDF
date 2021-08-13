@@ -27,9 +27,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace MigraDoc.Rendering
+using PikaPDF.DocumentObjectModel.Properties;
+
+namespace PikaPDF.Rendering.Properties
 {
-    using MigraDoc;
     internal class VersionInfo
     {
         public const string Title = "MigraDoc.Rendering.dll";

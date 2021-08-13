@@ -33,7 +33,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Deals with image file names, searches along the image path, checks if images exist etc.

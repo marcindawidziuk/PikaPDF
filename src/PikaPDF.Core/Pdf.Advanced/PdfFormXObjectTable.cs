@@ -28,12 +28,11 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Collections.Generic;
-using System.Globalization;
-using PdfSharp.Drawing;
+using System.Diagnostics;
+using PikaPDF.Core.Drawing;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Contains all external PDF files from which PdfFormXObjects are imported into the current document.

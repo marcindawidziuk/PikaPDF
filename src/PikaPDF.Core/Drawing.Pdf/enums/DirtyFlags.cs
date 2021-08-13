@@ -29,7 +29,7 @@
 
 using System;
 
-namespace PdfSharp.Drawing.Pdf
+namespace PikaPDF.Core.Drawing.Pdf.enums
 {
     [Flags]
     enum DirtyFlags

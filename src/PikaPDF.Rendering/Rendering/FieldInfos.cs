@@ -31,7 +31,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Field information used to fill fields when rendering or formatting.

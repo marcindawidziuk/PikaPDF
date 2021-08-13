@@ -29,9 +29,9 @@
 #endregion
 
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Iterates sequentially through the elements of a paragraph.

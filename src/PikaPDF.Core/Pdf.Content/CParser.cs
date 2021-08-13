@@ -29,13 +29,16 @@
 
 using System.Diagnostics;
 using System.IO;
-using PdfSharp.Internal;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Content.Objects;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Content.enums;
+using PikaPDF.Core.Pdf.Content.Objects;
+using PikaPDF.Core.Pdf.Content.Objects.@enum;
+using PikaPDF.Core.root;
 
 #pragma warning disable 1591
 
-namespace PdfSharp.Pdf.Content
+namespace PikaPDF.Core.Pdf.Content
 {
     /// <summary>
     /// Provides the functionality to parse PDF content streams.

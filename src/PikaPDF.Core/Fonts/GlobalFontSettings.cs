@@ -28,10 +28,10 @@
 #endregion
 
 using System;
-using PdfSharp.Internal;
-using PdfSharp.Pdf;
+using PikaPDF.Core.Internal;
+using PikaPDF.Core.Pdf.enums;
 
-namespace PdfSharp.Fonts
+namespace PikaPDF.Core.Fonts
 {
     /// <summary>
     /// Provides functionality to specify information about the handling of fonts in the current application domain.

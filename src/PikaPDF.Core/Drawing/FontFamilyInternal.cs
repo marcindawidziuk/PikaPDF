@@ -29,9 +29,8 @@
 
 using System.Diagnostics;
 using System.Globalization;
-using PdfSharp.Internal;
+using PikaPDF.Core.Internal;
 #if CORE || GDI
-using System.Drawing;
 using GdiFontFamily = System.Drawing.FontFamily;
 #endif
 #if WPF
@@ -43,7 +42,7 @@ using WpfFontFamily = System.Windows.Media.FontFamily;
 // ReSharper disable ConvertToAutoProperty
 // ReSharper disable ConvertPropertyToExpressionBody
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Internal implementation class of XFontFamily.

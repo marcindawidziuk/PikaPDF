@@ -27,10 +27,6 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.Diagnostics;
-using System.Globalization;
-using System.Runtime.InteropServices;
 #if GDI
 using System.Drawing;
 #endif
@@ -44,13 +40,19 @@ using Windows.UI.Xaml.Media;
 using SysPoint = Windows.Foundation.Point;
 using SysSize = Windows.Foundation.Size;
 #endif
+using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Runtime.InteropServices;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Internal;
 #if !EDF_CORE
-using PdfSharp.Internal;
+
 #else
 using PdfSharp.Internal;
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Represents a pair of floating-point numbers, typically the width and height of a

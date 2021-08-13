@@ -29,6 +29,7 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Drawing.BarCodes.enums;
 #if GDI
 using System.Drawing;
 #endif
@@ -37,7 +38,7 @@ using System.Windows;
 using System.Windows.Media;
 #endif
 
-namespace PdfSharp.Drawing.BarCodes
+namespace PikaPDF.Core.Drawing.BarCodes
 {
     /// <summary>
     /// Defines the DataMatrix 2D barcode. THIS IS AN EMPIRA INTERNAL IMPLEMENTATION. THE CODE IN

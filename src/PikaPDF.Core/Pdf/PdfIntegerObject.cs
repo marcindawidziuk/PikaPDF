@@ -29,9 +29,9 @@
 
 using System.Diagnostics;
 using System.Globalization;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents an indirect integer value. This type is not used by PDFsharp. If it is imported from

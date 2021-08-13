@@ -28,9 +28,9 @@
 #endregion
 
 using System.Collections.Generic;
-using PdfSharp.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Advanced;
 
-namespace PdfSharp.Pdf.Structure
+namespace PikaPDF.Core.Pdf.Structure
 {
     /// <summary>
     /// Represents the root of a structure tree.
@@ -242,7 +242,7 @@ namespace PdfSharp.Pdf.Structure
 
             /// <summary>
             /// (Optional) The element identifier, a byte string designating this structure element.
-            /// The string must be unique among all elements in the document’s structure hierarchy.
+            /// The string must be unique among all elements in the documentâ€™s structure hierarchy.
             /// The IDTree entry in the structure tree root defines the correspondence between
             /// element identifiers and the structure elements they denote.
             /// </summary>
@@ -260,10 +260,10 @@ namespace PdfSharp.Pdf.Structure
             /// (Optional) The children of this structure element. The value of this entry
             /// may be one of the following objects or an array consisting of one or more
             /// of the following objects:
-            ///     • A structure element dictionary denoting another structure element
-            ///     • An integer marked-content identifier denoting a marked-content sequence
-            ///     • A marked-content reference dictionary denoting a marked-content sequence
-            ///     • An object reference dictionary denoting a PDF object
+            ///     â€¢ A structure element dictionary denoting another structure element
+            ///     â€¢ An integer marked-content identifier denoting a marked-content sequence
+            ///     â€¢ A marked-content reference dictionary denoting a marked-content sequence
+            ///     â€¢ An object reference dictionary denoting a PDF object
             /// Each of these objects other than the first (structure element dictionary)
             /// is considered to be a content item.
             /// Note: If the value of K is a dictionary containing no Type entry,
@@ -310,7 +310,7 @@ namespace PdfSharp.Pdf.Structure
 
             /// <summary>
             /// (Optional) An alternate description of the structure element and its children
-            /// in human-readable form, which is useful when extracting the document’s contents
+            /// in human-readable form, which is useful when extracting the documentâ€™s contents
             /// in support of accessibility to users with disabilities or for other purposes.
             /// </summary>
             [KeyInfo(KeyType.TextString | KeyType.Optional)]
@@ -325,7 +325,7 @@ namespace PdfSharp.Pdf.Structure
             /// <summary>
             /// (Optional; PDF 1.4) Text that is an exact replacement for the structure element and
             /// its children. This replacement text (which should apply to as small a piece of
-            /// content as possible) is useful when extracting the document’s contents in support
+            /// content as possible) is useful when extracting the documentâ€™s contents in support
             /// of accessibility to users with disabilities or for other purposes.
             /// </summary>
             [KeyInfo(KeyType.TextString | KeyType.Optional)]

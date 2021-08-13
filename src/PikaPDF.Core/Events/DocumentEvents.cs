@@ -28,10 +28,10 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf;
 
-namespace PdfSharp.Events
+namespace PikaPDF.Core.Events
 {
     /// <summary>
     /// Base class for EventArgs in PDFsharp.

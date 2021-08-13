@@ -28,10 +28,10 @@
 #endregion
 
 using System;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.Advanced;
+using PikaPDF.Core.Pdf;
+using PikaPDF.Core.Pdf.Advanced;
 
-namespace PdfSharp.Drawing.Internal
+namespace PikaPDF.Core.Drawing.Internal
 {
     // $THHO THHO4THHO add support for PdfDocument.Options.
     internal class ImageImporterBmp : ImageImporterRoot, IImageImporter

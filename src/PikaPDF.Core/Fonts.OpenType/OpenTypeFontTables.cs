@@ -32,14 +32,15 @@
 using System;
 using System.Diagnostics;
 using System.Text;
-
+using PikaPDF.Core.Fonts.OpenType.enums;
+using PikaPDF.Core.root;
 using Fixed = System.Int32;
 using FWord = System.Int16;
 using UFWord = System.UInt16;
 
 // ReSharper disable InconsistentNaming
 
-namespace PdfSharp.Fonts.OpenType
+namespace PikaPDF.Core.Fonts.OpenType
 {
     internal enum PlatformId
     {

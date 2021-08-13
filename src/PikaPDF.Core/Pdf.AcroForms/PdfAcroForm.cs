@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf.AcroForms
+namespace PikaPDF.Core.Pdf.AcroForms
 {
     /// <summary>
     /// Represents an interactive form (or AcroForm), a collection of fields for
@@ -74,7 +74,7 @@ namespace PdfSharp.Pdf.AcroForms
             // ReSharper disable InconsistentNaming
 
             /// <summary>
-            /// (Required) An array of references to the document’s root fields (those with
+            /// (Required) An array of references to the documentâ€™s root fields (those with
             /// no ancestors in the field hierarchy).
             /// </summary>
             [KeyInfo(KeyType.Array | KeyType.Required, typeof(PdfAcroField.PdfAcroFieldCollection))]

@@ -33,9 +33,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel.Visitors;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Visitors;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Base class of all collections of the MigraDoc Document Object Model.

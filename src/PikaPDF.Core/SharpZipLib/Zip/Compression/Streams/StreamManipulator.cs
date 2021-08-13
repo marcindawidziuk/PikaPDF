@@ -38,7 +38,7 @@
 
 using System;
 
-namespace PdfSharp.SharpZipLib.Zip.Compression.Streams
+namespace PikaPDF.Core.SharpZipLib.Zip.Compression.Streams
 {
 
     /// <summary>

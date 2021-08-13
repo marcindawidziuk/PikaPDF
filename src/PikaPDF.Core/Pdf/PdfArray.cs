@@ -28,15 +28,16 @@
 #endregion
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Collections;
 using System.Globalization;
 using System.Text;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents a PDF array object.

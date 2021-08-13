@@ -28,9 +28,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Rendering.Rendering.enums;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Abstract base class to serve as a layoutable unit.

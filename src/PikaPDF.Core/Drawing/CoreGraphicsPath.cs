@@ -26,12 +26,14 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 // DEALINGS IN THE SOFTWARE.
 #endregion
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using PdfSharp.Internal;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing.enums;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Represents a graphics path that uses the same notation as GDI+.

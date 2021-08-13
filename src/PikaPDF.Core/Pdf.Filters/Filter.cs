@@ -27,10 +27,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Internal;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf.Filters
+namespace PikaPDF.Core.Pdf.Filters
 {
     /// <summary>
     /// Reserved for future extension.

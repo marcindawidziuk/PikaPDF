@@ -29,10 +29,10 @@
 #endregion
 
 using System.Collections.Generic;
-using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
+using PikaPDF.Core.Drawing;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     /// <summary>
     /// Represents a formatted header or footer.

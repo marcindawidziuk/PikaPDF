@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf.IO
+namespace PikaPDF.Core.Pdf.IO.enums
 {
     /// <summary>
     /// Determines the type of the password.

@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace MigraDoc.Rendering.UnitTest
+namespace PikaPDF.Rendering.Rendering.UnitTest
 {
     /// <summary>
     /// Summary description for ValueDumper.

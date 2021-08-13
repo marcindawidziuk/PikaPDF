@@ -37,7 +37,7 @@
 
 using System;
 
-namespace PdfSharp.SharpZipLib.Checksums
+namespace PikaPDF.Core.SharpZipLib.Checksums
 {
 
     /// <summary>

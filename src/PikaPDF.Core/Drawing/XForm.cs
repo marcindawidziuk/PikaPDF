@@ -29,7 +29,10 @@
 
 using System;
 using System.Diagnostics;
-using System.IO;
+using PikaPDF.Core.Drawing.Pdf;
+using PikaPDF.Core.Pdf;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.enums;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -38,12 +41,8 @@ using System.Drawing.Imaging;
 #if WPF
 using System.Windows.Media;
 #endif
-using PdfSharp.Drawing.Pdf;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Filters;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Represents a graphical object that can be used to render retained graphics on it.

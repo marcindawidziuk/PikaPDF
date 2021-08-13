@@ -28,12 +28,12 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Collections.Generic;
-using PdfSharp.Fonts.OpenType;
-using PdfSharp.Pdf.Internal;
+using System.Diagnostics;
+using PikaPDF.Core.Fonts.OpenType;
+using PikaPDF.Core.Pdf.Internal;
 
-namespace PdfSharp.Fonts
+namespace PikaPDF.Core.Fonts
 {
     /// <summary>
     /// Helper class that determines the characters used in a particular font.

@@ -28,11 +28,11 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Fonts;
+using PikaPDF.Core.Fonts.OpenType;
 #if CORE || GDI
-using System.Drawing;
 using GdiFont = System.Drawing.Font;
-using GdiFontFamily = System.Drawing.FontFamily;
-using GdiFontStyle = System.Drawing.FontStyle;
 #endif
 #if WPF
 using System.Windows.Media;
@@ -40,10 +40,8 @@ using System.Windows.Markup;
 using WpfFontFamily = System.Windows.Media.FontFamily;
 using WpfFontStyle = System.Windows.FontStyle;
 #endif
-using PdfSharp.Fonts;
-using PdfSharp.Fonts.OpenType;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Defines a group of typefaces having a similar basic design and certain variations in styles.

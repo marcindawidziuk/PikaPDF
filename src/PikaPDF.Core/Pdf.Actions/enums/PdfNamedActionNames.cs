@@ -27,7 +27,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Pdf.Actions
+namespace PikaPDF.Core.Pdf.Actions.enums
 {
     /// <summary>
     /// Specifies the predefined PDF actions.

@@ -32,7 +32,7 @@
 
 using System;
 
-namespace MigraDoc.DocumentObjectModel
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel
 {
     /// <summary>
     /// Provides relational information between document objects.

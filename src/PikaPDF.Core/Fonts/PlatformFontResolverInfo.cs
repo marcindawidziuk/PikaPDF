@@ -27,8 +27,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-#if CORE || GDI
+
 using System.Drawing;
+#if CORE || GDI
 using GdiFont = System.Drawing.Font;
 
 #endif
@@ -39,7 +40,7 @@ using WpfTypeface = System.Windows.Media.Typeface;
 using WpfGlyphTypeface = System.Windows.Media.GlyphTypeface;
 #endif
 
-namespace PdfSharp.Fonts
+namespace PikaPDF.Core.Fonts
 {
     /// <summary>
     /// Represents a font resolver info created by the platform font resolver.

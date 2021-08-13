@@ -31,8 +31,10 @@
 #endregion
 
 using System;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.IO.enums;
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO
 {
     /// <summary>
     /// Represents an exception used by the DDL parser. This exception will always be caught inside

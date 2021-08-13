@@ -28,17 +28,18 @@
 #endregion
 
 using System;
+using System.Diagnostics;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Fonts;
 #if GDI
 using System.Drawing;
 #endif
 #if WPF
 using System.Windows;
 #endif
-using System.Diagnostics;
-using PdfSharp.Drawing;
-using PdfSharp.Fonts;
 
-namespace PdfSharp.Internal
+namespace PikaPDF.Core.Internal
 {
     /// <summary>
     /// A bunch of internal helper functions.

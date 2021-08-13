@@ -28,13 +28,13 @@
 #endregion
 
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
-#if CORE || GDI
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using GdiFontFamily = System.Drawing.FontFamily;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Fonts;
+using PikaPDF.Core.Fonts.OpenType;
+#if CORE || GDI
 using GdiFont = System.Drawing.Font;
 using GdiFontStyle = System.Drawing.FontStyle;
 #endif
@@ -54,10 +54,8 @@ using WpfGlyphTypeface = System.Windows.Media.GlyphTypeface;
 using Windows.UI.Text;
 using Windows.UI.Xaml.Media;
 #endif
-using PdfSharp.Fonts;
-using PdfSharp.Fonts.OpenType;
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// A bunch of functions that do not have a better place.

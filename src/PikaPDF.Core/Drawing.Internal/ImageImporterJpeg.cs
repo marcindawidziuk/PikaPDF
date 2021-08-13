@@ -28,9 +28,9 @@
 #endregion
 
 using System;
-using PdfSharp.Pdf;
+using PikaPDF.Core.Pdf;
 
-namespace PdfSharp.Drawing.Internal
+namespace PikaPDF.Core.Drawing.Internal
 {
     // ReSharper disable once InconsistentNaming
     internal class ImageImporterJpeg : ImageImporterRoot, IImageImporter

@@ -28,19 +28,20 @@
 #endregion
 
 using System;
-using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Reflection;
 using System.Text;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf.IO;
-using PdfSharp.Pdf.Filters;
-using PdfSharp.Pdf.Advanced;
-using PdfSharp.Pdf.Internal;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.Core.Pdf.Filters;
+using PikaPDF.Core.Pdf.Internal;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.Pdf.IO.enums;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Value creation flags. Specifies whether and how a value that does not exist is created.

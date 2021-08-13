@@ -27,9 +27,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents an indirect null value. This type is not used by PDFsharp, but at least
@@ -62,7 +62,7 @@ namespace PdfSharp.Pdf
         }
 
         /// <summary>
-        /// Writes the keyword «null».
+        /// Writes the keyword Â«nullÂ».
         /// </summary>
         internal override void WriteObject(PdfWriter writer)
         {

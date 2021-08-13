@@ -34,7 +34,7 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO
 {
     /// <summary>
     /// Represents a reader that provides access to DDL data.

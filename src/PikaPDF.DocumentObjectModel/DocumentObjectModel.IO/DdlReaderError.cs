@@ -31,8 +31,9 @@
 #endregion
 
 using System;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.IO.enums;
 
-namespace MigraDoc.DocumentObjectModel.IO
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.IO
 {
     /// <summary>
     /// Represents an error or diagnostic message reported by the DDL reader.

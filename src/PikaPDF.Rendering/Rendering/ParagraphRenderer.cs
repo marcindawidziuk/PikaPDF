@@ -32,15 +32,17 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
-using MigraDoc.DocumentObjectModel;
-using PdfSharp.Pdf;
-using PdfSharp.Drawing;
-using MigraDoc.DocumentObjectModel.Fields;
-using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.Rendering.Resources;
-using PdfSharp.Pdf.Advanced;
+using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Pdf;
+using PikaPDF.Core.Pdf.Advanced;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.enums;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Fields;
+using PikaPDF.DocumentObjectModel.DocumentObjectModel.Shapes;
+using PikaPDF.Rendering.Rendering.Resources;
 
-namespace MigraDoc.Rendering
+namespace PikaPDF.Rendering.Rendering
 {
     internal struct TabOffset
     {

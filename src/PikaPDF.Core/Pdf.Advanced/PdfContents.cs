@@ -28,13 +28,14 @@
 #endregion
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Collections;
-using PdfSharp.Pdf.Content.Objects;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.Content.Objects;
+using PikaPDF.Core.Pdf.IO;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     /// <summary>
     /// Represents an array of PDF content streams of a page.

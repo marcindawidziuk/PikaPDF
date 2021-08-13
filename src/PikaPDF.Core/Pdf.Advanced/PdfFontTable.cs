@@ -27,11 +27,11 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System.Diagnostics;
 using System.Collections.Generic;
-using PdfSharp.Drawing;
+using System.Diagnostics;
+using PikaPDF.Core.Drawing;
 
-namespace PdfSharp.Pdf.Advanced
+namespace PikaPDF.Core.Pdf.Advanced
 {
     internal enum FontType
     {

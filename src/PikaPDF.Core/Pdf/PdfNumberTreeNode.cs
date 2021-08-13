@@ -27,12 +27,10 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
 using System.Diagnostics;
-using PdfSharp.Pdf.Annotations;
-using PdfSharp.Pdf.IO;
+using PikaPDF.Core.Pdf.IO;
 
-namespace PdfSharp.Pdf
+namespace PikaPDF.Core.Pdf
 {
     /// <summary>
     /// Represents a number tree node.
@@ -194,7 +192,7 @@ namespace PdfSharp.Pdf
             /// <summary>
             /// (Root and leaf nodes only; required in leaf nodes; present in the root node if and only if Kidsis not present)
             /// An array of the form
-            ///      [key1 value1 key2 value2 … keyn valuen]
+            ///      [key1 value1 key2 value2 â€¦ keyn valuen]
             /// where each keyi is an integer and the corresponding valuei is the object associated with that key.
             /// The keys are sorted in numerical order, analogously to the arrangement of keys in a name tree.
             /// </summary>

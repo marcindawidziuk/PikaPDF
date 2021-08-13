@@ -27,17 +27,16 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.IO;
-using PdfSharp.Internal;
 #if NET_ZIP
 using System.IO.Compression;
 #else
-using PdfSharp.SharpZipLib.Zip.Compression;
-using PdfSharp.SharpZipLib.Zip.Compression.Streams;
 #endif
+using System.IO;
+using PikaPDF.Core.Pdf.enums;
+using PikaPDF.Core.SharpZipLib.Zip.Compression;
+using PikaPDF.Core.SharpZipLib.Zip.Compression.Streams;
 
-namespace PdfSharp.Pdf.Filters
+namespace PikaPDF.Core.Pdf.Filters
 {
     /// <summary>
     /// Implements the FlateDecode filter by wrapping SharpZipLib.

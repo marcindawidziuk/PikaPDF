@@ -27,7 +27,9 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-namespace PdfSharp.Drawing.BarCodes
+using PikaPDF.Core.Drawing.BarCodes.enums;
+
+namespace PikaPDF.Core.Drawing.BarCodes
 {
     /// <summary>
     /// Implementation of the Code 2 of 5 bar code.

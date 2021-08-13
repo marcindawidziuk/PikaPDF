@@ -25,9 +25,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-
-namespace MigraDoc
+namespace PikaPDF.DocumentObjectModel.Properties
 {
     /// <summary>
     /// Base namespace of MigraDoc. Classes are implemented in nested namespaces like e. g. MigraDoc.DocumentObjectModel.
@@ -85,7 +83,7 @@ namespace MigraDoc
         /// <summary>
         /// The copyright information.
         /// </summary>
-        public const string Copyright = "Copyright © 2001-2019 empira Software GmbH."; // Also used as NuGet Copyright.
+        public const string Copyright = "Copyright Â© 2001-2019 empira Software GmbH."; // Also used as NuGet Copyright.
 
         /// <summary>
         /// The trademark the product.

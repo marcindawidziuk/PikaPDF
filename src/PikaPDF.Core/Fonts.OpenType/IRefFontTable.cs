@@ -28,11 +28,9 @@
 #endregion
 
 using System;
-using Fixed = System.Int32;
-using FWord = System.Int16;
-using UFWord = System.UInt16;
+using PikaPDF.Core.Fonts.OpenType.enums;
 
-namespace PdfSharp.Fonts.OpenType
+namespace PikaPDF.Core.Fonts.OpenType
 {
     /// <summary>
     /// Represents an indirect reference to an existing font table in a font image.

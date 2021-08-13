@@ -34,7 +34,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace MigraDoc.DocumentObjectModel.Internals
+namespace PikaPDF.DocumentObjectModel.DocumentObjectModel.Internals
 {
     /// <summary>
     /// A collection that manages ValueDescriptors.
@@ -59,7 +59,7 @@ namespace MigraDoc.DocumentObjectModel.Internals
         }
 
         /// <summary>
-        /// Gets the <see cref="MigraDoc.DocumentObjectModel.Internals.ValueDescriptor"/> at the specified index.
+        /// Gets the <see cref="ValueDescriptor"/> at the specified index.
         /// </summary>
         public ValueDescriptor this[int index]
         {
@@ -67,7 +67,7 @@ namespace MigraDoc.DocumentObjectModel.Internals
         }
 
         /// <summary>
-        /// Gets the <see cref="MigraDoc.DocumentObjectModel.Internals.ValueDescriptor"/> with the specified name.
+        /// Gets the <see cref="ValueDescriptor"/> with the specified name.
         /// </summary>
         public ValueDescriptor this[string name]
         {

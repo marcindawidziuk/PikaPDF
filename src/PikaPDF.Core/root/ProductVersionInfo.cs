@@ -28,9 +28,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-
-namespace PdfSharp
+namespace PikaPDF.Core.root
 {
     /// <summary>
     /// Version info base for all PDFsharp related assemblies.

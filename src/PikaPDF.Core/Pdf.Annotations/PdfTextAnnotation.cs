@@ -28,8 +28,9 @@
 #endregion
 
 using System;
+using PikaPDF.Core.Pdf.Annotations.enums;
 
-namespace PdfSharp.Pdf.Annotations
+namespace PikaPDF.Core.Pdf.Annotations
 {
     /// <summary>
     /// Represents a text annotation.

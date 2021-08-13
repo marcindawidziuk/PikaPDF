@@ -28,14 +28,17 @@
 #endregion
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Collections;
 using System.Globalization;
 using System.IO;
 using System.Text;
+using PikaPDF.Core._internal;
+using PikaPDF.Core.Pdf.Content.Objects.@enum;
+using PikaPDF.Core.root;
 
-namespace PdfSharp.Pdf.Content.Objects  // TODO: split into single files
+namespace PikaPDF.Core.Pdf.Content.Objects  // TODO: split into single files
 {
     /// <summary>
     /// Base class for all PDF content stream objects.

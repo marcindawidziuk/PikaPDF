@@ -30,10 +30,11 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
+using PikaPDF.Core.Drawing.enums;
+using PikaPDF.Core.Fonts;
+using PikaPDF.Core.Fonts.OpenType;
+using PikaPDF.Core.Internal;
 #if CORE || GDI
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using GdiFontFamily = System.Drawing.FontFamily;
 using GdiFont = System.Drawing.Font;
 using GdiFontStyle = System.Drawing.FontStyle;
 #endif
@@ -49,9 +50,6 @@ using WpfStyleSimulations = System.Windows.Media.StyleSimulations;
 #if UWP
 using Windows.UI.Xaml.Media;
 #endif
-using PdfSharp.Fonts;
-using PdfSharp.Fonts.OpenType;
-using PdfSharp.Internal;
 
 #pragma warning disable 649
 #if SILVERLIGHT
@@ -61,7 +59,7 @@ using PdfSharp.Internal;
 #pragma warning disable 649
 #endif
 
-namespace PdfSharp.Drawing
+namespace PikaPDF.Core.Drawing
 {
     /// <summary>
     /// Specifies a physical font face that corresponds to a font file on the disk or in memory.
