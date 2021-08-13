@@ -1,17 +1,5 @@
-# MigraDoc
-MigraDoc Foundation - Creating documents on the fly
-
-MigraDoc references PDFsharp as a submodule. After pulling MigraDoc to a local repository, call
-* git submodule init
-* git submodule update
-
-to update the submodule.
-
-When forking MigraDoc, the fork will still reference the original PDFsharp repository. Consider forking PDFsharp, too, and use your fork as a submodule.
-
-When downloading MigraDoc as a ZIP, the submodule PDFsharp will be empty. So also download a ZIP for the PDFsharp repository.
-
-Please note: Source code is also available on SourceForge as a ZIP file. The MigraDoc ZIP file on SourceForge does include the PDFsharp files.
+# PDFsharp
+A .NET library for processing PDF
 
 # Resources
 
@@ -36,3 +24,12 @@ Azure servers do not require Medium Trust.
 
 I'm afraid that many users who never tried any beta version of PDFsharp 1.50 will now switch from version 1.32 stable to version 1.50 stable.  
 Nothing wrong about that. I hope we don't get an avalanche of bug reports now.
+
+
+# Which Version to Get?
+
+The naming convention for the packages has changed.
+
+If you are using "PdfSharp -Version 1.32.3057" then the version you need now is "PDFsharp-gdi -Version 1.50".  
+Or get the corresponding package " PDFsharp-MigraDoc-GDI -Version 1.50".
+
