@@ -35,7 +35,6 @@ using PikaPDF.Core.Events;
 using PikaPDF.Core.Pdf.Advanced;
 using PikaPDF.Core.Pdf.Annotations;
 using PikaPDF.Core.Pdf.IO.enums;
-using PikaPDF.Core.root;
 
 namespace PikaPDF.Core.Pdf
 {

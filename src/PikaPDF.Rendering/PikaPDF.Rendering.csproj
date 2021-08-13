@@ -41,8 +41,8 @@
     <ProjectReference Include="..\PikaPDF.Core\PikaPDF.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Rendering.Resources\Messages.de.restext" />
-    <EmbeddedResource Include="Rendering.Resources\Messages.restext" />
+    <EmbeddedResource Include="Resources\Messages.de.restext" />
+    <EmbeddedResource Include="Resources\Messages.restext" />
     <None Include="StrongnameKey.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

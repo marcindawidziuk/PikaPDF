@@ -29,7 +29,7 @@
 
 using System;
 using PikaPDF.Core.Drawing;
-using PikaPDF.Core.root.enums;
+using PikaPDF.Core.Enums;
 #if GDI
 using System.Drawing;
 #endif

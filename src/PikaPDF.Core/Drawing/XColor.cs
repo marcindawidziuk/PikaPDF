@@ -32,7 +32,6 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
 using PikaPDF.Core.Drawing.enums;
-using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 #endif

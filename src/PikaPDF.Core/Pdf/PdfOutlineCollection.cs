@@ -32,7 +32,6 @@ using System.Collections;
 using System.Collections.Generic;
 using PikaPDF.Core.Drawing;
 using PikaPDF.Core.Pdf.enums;
-using PikaPDF.Core.root;
 
 // Review: CountOpen does not work. - StL/14-10-05
 

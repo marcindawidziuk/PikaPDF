@@ -28,7 +28,6 @@
 #endregion
 
 using System;
-using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 #endif

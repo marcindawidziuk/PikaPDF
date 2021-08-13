@@ -29,6 +29,7 @@
 
 using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.Text;
 using PikaPDF.Core._internal;
 using PikaPDF.Core.Drawing.enums;
@@ -37,7 +38,6 @@ using PikaPDF.Core.Events;
 using PikaPDF.Core.Pdf;
 using PikaPDF.Core.Pdf.Advanced;
 using PikaPDF.Core.Pdf.enums;
-using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -5367,6 +5367,11 @@ namespace PikaPDF.Core.Drawing  // #??? Clean up
 
                 return point;
             }
+        }
+
+        public static XGraphics FromGraphics(Graphics graphics, XSize size)
+        {
+            throw new NotImplementedException();
         }
     }
 }

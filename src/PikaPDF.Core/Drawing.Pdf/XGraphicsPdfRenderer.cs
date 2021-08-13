@@ -44,7 +44,6 @@ using PikaPDF.Core.Pdf;
 using PikaPDF.Core.Pdf.Advanced;
 using PikaPDF.Core.Pdf.enums;
 using PikaPDF.Core.Pdf.Internal;
-using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;

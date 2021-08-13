@@ -34,7 +34,6 @@ using PikaPDF.Core.Pdf.Advanced;
 using PikaPDF.Core.Pdf.Content.enums;
 using PikaPDF.Core.Pdf.Content.Objects;
 using PikaPDF.Core.Pdf.Content.Objects.@enum;
-using PikaPDF.Core.root;
 
 #pragma warning disable 1591
 

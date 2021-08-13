@@ -32,7 +32,6 @@ using System.IO;
 using PikaPDF.Core.Internal;
 using PikaPDF.Core.Pdf;
 using PikaPDF.Core.Pdf.IO;
-using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 using System.Drawing.Drawing2D;

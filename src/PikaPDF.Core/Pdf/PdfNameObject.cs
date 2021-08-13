@@ -30,7 +30,6 @@
 using System;
 using System.Diagnostics;
 using PikaPDF.Core.Pdf.IO;
-using PikaPDF.Core.root;
 
 namespace PikaPDF.Core.Pdf
 {

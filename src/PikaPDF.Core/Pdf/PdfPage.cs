@@ -32,12 +32,11 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
 using PikaPDF.Core.Drawing;
+using PikaPDF.Core.Enums;
 using PikaPDF.Core.Pdf.Advanced;
 using PikaPDF.Core.Pdf.Annotations;
 using PikaPDF.Core.Pdf.enums;
 using PikaPDF.Core.Pdf.IO;
-using PikaPDF.Core.root;
-using PikaPDF.Core.root.enums;
 
 namespace PikaPDF.Core.Pdf
 {

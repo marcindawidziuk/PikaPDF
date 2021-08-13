@@ -30,7 +30,6 @@
 using System;
 using System.Diagnostics;
 using PikaPDF.Core.Drawing;
-using PikaPDF.Core.root;
 #if GDI
 using System.Drawing;
 using System.Drawing.Imaging;

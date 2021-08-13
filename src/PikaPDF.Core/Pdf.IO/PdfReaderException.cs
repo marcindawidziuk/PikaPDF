@@ -28,7 +28,6 @@
 #endregion
 
 using System;
-using PikaPDF.Core.root;
 
 namespace PikaPDF.Core.Pdf.IO
 {

@@ -33,7 +33,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using PikaPDF.Core.Pdf.Content.Objects;
 using PikaPDF.Core.Pdf.IO;
-using PikaPDF.Core.root;
 
 namespace PikaPDF.Core.Pdf.Advanced
 {

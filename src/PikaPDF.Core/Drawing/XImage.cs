@@ -36,7 +36,6 @@ using PikaPDF.Core.Internal;
 using PikaPDF.Core.Pdf;
 using PikaPDF.Core.Pdf.Advanced;
 using PikaPDF.Core.Pdf.IO;
-using PikaPDF.Core.root;
 #if CORE
 #endif
 #if GDI

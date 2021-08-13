@@ -39,7 +39,6 @@ using PikaPDF.Core.Pdf.IO;
 using PikaPDF.Core.Pdf.IO.enums;
 using PikaPDF.Core.Pdf.Security;
 using PikaPDF.Core.Pdf.Security.enums;
-using PikaPDF.Core.root;
 #if NETFX_CORE
 using System.Threading.Tasks;
 #endif

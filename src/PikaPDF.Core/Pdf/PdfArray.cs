@@ -35,7 +35,6 @@ using System.Globalization;
 using System.Text;
 using PikaPDF.Core.Pdf.Advanced;
 using PikaPDF.Core.Pdf.IO;
-using PikaPDF.Core.root;
 
 namespace PikaPDF.Core.Pdf
 {

@@ -29,7 +29,6 @@
 
 using System;
 using PikaPDF.Core.Pdf.Security.enums;
-using PikaPDF.Core.root;
 
 namespace PikaPDF.Core.Pdf.Security
 {

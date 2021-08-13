@@ -36,7 +36,6 @@ using System.IO;
 using System.Text;
 using PikaPDF.Core._internal;
 using PikaPDF.Core.Pdf.Content.Objects.@enum;
-using PikaPDF.Core.root;
 
 namespace PikaPDF.Core.Pdf.Content.Objects  // TODO: split into single files
 {
