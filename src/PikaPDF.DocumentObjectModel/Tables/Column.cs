@@ -38,7 +38,7 @@ namespace PikaPDF.DocumentObjectModel.Tables
     /// <summary>
     /// Represents a column of a table.
     /// </summary>
-    public class Column : DocumentObject
+    public class Column : DocumentObject, IHasParagraphFormat, IHasBorders
     {
         /// <summary>
         /// Initializes a new instance of the Column class.

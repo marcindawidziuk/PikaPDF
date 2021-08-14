@@ -44,7 +44,7 @@ namespace PikaPDF.DocumentObjectModel
     /// <summary>
     /// Represents a paragraph which is used to build up a document with text.
     /// </summary>
-    public class Paragraph : DocumentObject, IVisitable
+    public class Paragraph : DocumentObject, IVisitable, IHasParagraphFormat
     {
         /// <summary>
         /// Initializes a new instance of the Paragraph class.

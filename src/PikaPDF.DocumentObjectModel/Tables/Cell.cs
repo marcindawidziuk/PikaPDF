@@ -43,7 +43,7 @@ namespace PikaPDF.DocumentObjectModel.Tables
     /// <summary>
     /// Represents a cell of a table.
     /// </summary>
-    public class Cell : DocumentObject, IVisitable
+    public class Cell : DocumentObject, IVisitable, IHasParagraphFormat, IHasBorders
     {
         /// <summary>
         /// Initializes a new instance of the Cell class.

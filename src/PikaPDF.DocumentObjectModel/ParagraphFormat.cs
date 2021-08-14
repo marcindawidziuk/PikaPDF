@@ -35,6 +35,14 @@ using PikaPDF.DocumentObjectModel.Internals;
 
 namespace PikaPDF.DocumentObjectModel
 {
+    public interface IHasBorders
+    {
+        Borders Borders { get; }
+    }
+    public interface IHasParagraphFormat
+    {
+        ParagraphFormat Format { get; }
+    }
     /// <summary>
     /// A ParagraphFormat represents the formatting of a paragraph.
     /// </summary>

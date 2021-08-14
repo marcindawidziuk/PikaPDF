@@ -67,6 +67,7 @@ namespace PikaPDF.Rendering
                 !XImage.ExistsFile(_imageFilePath))
             {
                 _failure = ImageFailure.FileNotFound;
+                //TODO: Remove
                 Debug.WriteLine(Messages2.ImageNotFound(_image.Name), "warning");
             }
             ImageFormatInfo formatInfo = (ImageFormatInfo)_renderInfo.FormatInfo;

@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.DocumentObjectModel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.Rendering", "src\PikaPDF.Rendering\PikaPDF.Rendering.csproj", "{8ECD6D69-219F-4611-9FCA-BFA6029F40D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.Fluent", "src\PikaPDF.Fluent\PikaPDF.Fluent.csproj", "{971CD9C4-78C9-42D8-AFDA-5B752A18FBF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.Barcodes", "src\PikaPDF.Barcodes\PikaPDF.Barcodes.csproj", "{0BD1D959-D34B-497C-9C80-FEB1786EDC11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{8ECD6D69-219F-4611-9FCA-BFA6029F40D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ECD6D69-219F-4611-9FCA-BFA6029F40D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ECD6D69-219F-4611-9FCA-BFA6029F40D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971CD9C4-78C9-42D8-AFDA-5B752A18FBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971CD9C4-78C9-42D8-AFDA-5B752A18FBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971CD9C4-78C9-42D8-AFDA-5B752A18FBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971CD9C4-78C9-42D8-AFDA-5B752A18FBF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BD1D959-D34B-497C-9C80-FEB1786EDC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD1D959-D34B-497C-9C80-FEB1786EDC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD1D959-D34B-497C-9C80-FEB1786EDC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD1D959-D34B-497C-9C80-FEB1786EDC11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

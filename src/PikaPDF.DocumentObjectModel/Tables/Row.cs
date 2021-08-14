@@ -40,7 +40,7 @@ namespace PikaPDF.DocumentObjectModel.Tables
     /// <summary>
     /// Represents a row of a table.
     /// </summary>
-    public class Row : DocumentObject, IVisitable
+    public class Row : DocumentObject, IVisitable, IHasParagraphFormat, IHasBorders
     {
         /// <summary>
         /// Initializes a new instance of the Row class.
