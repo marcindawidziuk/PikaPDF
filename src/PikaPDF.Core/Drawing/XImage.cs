@@ -942,9 +942,6 @@ namespace PikaPDF.Core.Drawing
                 }
                 finally { Lock.ExitGdiPlus(); }
 #endif
-                #if true
-                var adfasds = "";
-#endif
             }
         }
 

@@ -60,22 +60,6 @@ namespace PikaPDF.Core.Fonts.OpenType
             : base(fontData, Tag)
         {
             DirectoryEntry.Tag = TableTagNames.Glyf;
-            Read();
-        }
-
-        /// <summary>
-        /// Converts the bytes in a handy representation
-        /// </summary>
-        public void Read()
-        {
-            try
-            {
-                // not yet needed...
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
         }
 
         /// <summary>

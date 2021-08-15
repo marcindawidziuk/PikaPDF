@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.Core", "src\PikaPDF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.Core.Charting", "src\PikaPDF.Core.Charting\PikaPDF.Core.Charting.csproj", "{4B27F0FF-86C9-4CD7-B6C2-9B5D905C17AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.Core.DocumentObjectModel", "src\PikaPDF.Core.DocumentObjectModel\PikaPDF.Core.DocumentObjectModel.csproj", "{96558810-C99E-4BDA-A091-BCF3542FF471}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.DocumentObjectModel", "src\PikaPDF.DocumentObjectModel\PikaPDF.DocumentObjectModel.csproj", "{F05A6E8B-98FF-418C-BEE2-FD646933D977}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikaPDF.Rendering", "src\PikaPDF.Rendering\PikaPDF.Rendering.csproj", "{8ECD6D69-219F-4611-9FCA-BFA6029F40D8}"
@@ -28,10 +26,6 @@ Global
 		{4B27F0FF-86C9-4CD7-B6C2-9B5D905C17AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B27F0FF-86C9-4CD7-B6C2-9B5D905C17AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B27F0FF-86C9-4CD7-B6C2-9B5D905C17AC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96558810-C99E-4BDA-A091-BCF3542FF471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96558810-C99E-4BDA-A091-BCF3542FF471}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96558810-C99E-4BDA-A091-BCF3542FF471}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96558810-C99E-4BDA-A091-BCF3542FF471}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F05A6E8B-98FF-418C-BEE2-FD646933D977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F05A6E8B-98FF-418C-BEE2-FD646933D977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F05A6E8B-98FF-418C-BEE2-FD646933D977}.Release|Any CPU.ActiveCfg = Release|Any CPU
