@@ -41,16 +41,7 @@ namespace PikaPDF.Fluent
         
         public string ToBase64(ImageFormat imageFormat)
         {
-            var image = Code128Rendering.MakeBarcodeImage(_text, _barWeight, _addQuietZone);
-            using MemoryStream m = new MemoryStream();
-            image.Save(m, ImageFormat.Png);
-            byte[] imageBytes = m.ToArray();
-
-            // Convert byte[] to Base64 String
-            var stringBuilder = new StringBuilder();
-            stringBuilder.Append("base64:");
-            stringBuilder.Append(Convert.ToBase64String(imageBytes));
-            return stringBuilder.ToString();
+            return ImageHelper.ToBase64(ToImage(), imageFormat);
         }
 
         public System.Drawing.Image ToImage()

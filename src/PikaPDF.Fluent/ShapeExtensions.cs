@@ -1,18 +1,64 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Imaging;
 using PikaPDF.DocumentObjectModel;
 using PikaPDF.DocumentObjectModel.Enums;
 using PikaPDF.DocumentObjectModel.Shapes;
 using PikaPDF.DocumentObjectModel.Shapes.Enums;
 using PikaPDF.DocumentObjectModel.Tables;
 using PikaPDF.DocumentObjectModel.Tables.Enums;
+using Color = PikaPDF.DocumentObjectModel.Color;
+using Image = PikaPDF.DocumentObjectModel.Shapes.Image;
+// using IHasAddImage = PikaPDF.DocumentObjectModel.IHasAddImage;
 
 namespace PikaPDF.Fluent
 {
     public static class TableExtensions
     {
+        public static Image AddImage<T>(this T documentObject, Bitmap bitmap, ImageFormat imageFormat) where T : IHasAddImage
+        {
+            var base64Image = ImageHelper.ToBase64(bitmap, imageFormat);
+            return documentObject.AddImage(base64Image);
+        }
+        
+        public static Image AddImage<T>(this T documentObject, Bitmap bitmap) where T : IHasAddImage
+        {
+            var base64Image = ImageHelper.ToBase64(bitmap, ImageFormat.Png);
+            return documentObject.AddImage(base64Image);
+        }
+        
+        public static Image AddImage<T>(this T documentObject, System.Drawing.Image bitmap, ImageFormat imageFormat) where T : IHasAddImage
+        {
+            var base64Image = ImageHelper.ToBase64(bitmap, imageFormat);
+            return documentObject.AddImage(base64Image);
+        }
+        
+        public static Image AddImage<T>(this T documentObject, System.Drawing.Image bitmap) where T : IHasAddImage
+        {
+            var base64Image = ImageHelper.ToBase64(bitmap, ImageFormat.Png);
+            return documentObject.AddImage(base64Image);
+        }
+        
         public static Cell CellAt(this Table shape, int row, int column)
         {
             return shape[row, column];
+        }
+        
+        public static void MergeRight(this Cell cell, int merge)
+        {
+            var mergeTo = cell.Column.Index + merge;
+            var maxColumnIndex = cell.Table.Columns.Count - 1;
+            if (mergeTo > maxColumnIndex)
+            {
+                throw new InvalidOperationException($"Trying to merge cell {cell.Row.Index}x{cell.Column.Index} to the right {merge} cells. Table has only {maxColumnIndex} columns.");
+            }
+
+            cell.MergeRight = merge;
+        }
+        
+        public static Cell CellAt(this Table shape, Row row, Column column)
+        {
+            return shape[row.Index, column.Index];
         }
         
         public static Row RowAt(this Table shape, int row)

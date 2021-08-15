@@ -39,11 +39,15 @@ using PikaPDF.DocumentObjectModel.Visitors;
 
 namespace PikaPDF.DocumentObjectModel
 {
+    public interface IHasAddImage
+    {
+        Image AddImage(string fileName);
+    }
     /// <summary>
     /// A Section is a collection of document objects sharing the same header, footer, 
     /// and page setup.
     /// </summary>
-    public class Section : DocumentObject, IVisitable
+    public class Section : DocumentObject, IVisitable, IHasAddImage
     {
         /// <summary>
         /// Initializes a new instance of the Section class.

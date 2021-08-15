@@ -2,7 +2,7 @@
 using System.Text;
 
 //Copied from https://github.com/SourceCodeBackup/GenCode128
-namespace WinGen.API.Core.Controllers.Orders
+namespace PikaPDF.Barcodes
 {
  public class Code128Content
     {

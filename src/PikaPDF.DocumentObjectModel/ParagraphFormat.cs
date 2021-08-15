@@ -32,6 +32,7 @@
 
 using PikaPDF.DocumentObjectModel.Enums;
 using PikaPDF.DocumentObjectModel.Internals;
+using PikaPDF.DocumentObjectModel.Shapes;
 
 namespace PikaPDF.DocumentObjectModel
 {
@@ -39,6 +40,7 @@ namespace PikaPDF.DocumentObjectModel
     {
         Borders Borders { get; }
     }
+    
     public interface IHasParagraphFormat
     {
         ParagraphFormat Format { get; }

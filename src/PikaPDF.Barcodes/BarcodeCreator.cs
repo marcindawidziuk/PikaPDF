@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using WinGen.API.Core.Controllers.Orders;
 
 namespace PikaPDF.Barcodes
 {

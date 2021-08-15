@@ -916,9 +916,6 @@ namespace PikaPDF.Core.Drawing
                 finally { Lock.ExitGdiPlus(); }
             }
 #endif
-#if WPF
-            _wpfImage = null;
-#endif
         }
         bool _disposed;
 
@@ -945,20 +942,8 @@ namespace PikaPDF.Core.Drawing
                 }
                 finally { Lock.ExitGdiPlus(); }
 #endif
-#if GDI && WPF
-                double gdiWidth = _gdiImage.Width;
-                double wpfWidth = _wpfImage.PixelWidth;
-                Debug.Assert(gdiWidth == wpfWidth);
-                return wpfWidth;
-#endif
-                //#if GDI && !WPF
-                //                return _gdiImage.Width;
-                //#endif
-#if WPF && !GDI
-                return _wpfImage.PixelWidth;
-#endif
-#if NETFX_CORE || UWP || DNC10
-                return 100;
+                #if true
+                var adfasds = "";
 #endif
             }
         }

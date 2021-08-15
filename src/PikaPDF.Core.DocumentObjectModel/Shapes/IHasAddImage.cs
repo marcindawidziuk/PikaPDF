@@ -1,0 +1,3 @@
+namespace PikaPDF.DocumentObjectModel.Shapes
+{
+}

@@ -36,6 +36,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\PikaPDF.Core.Charting\PikaPDF.Core.Charting.csproj" />
     <ProjectReference Include="..\PikaPDF.DocumentObjectModel\PikaPDF.DocumentObjectModel.csproj" />
     <ProjectReference Include="..\PikaPDF.Core\PikaPDF.Core.csproj" />
@@ -45,7 +48,7 @@
     <EmbeddedResource Include="Resources\Messages.restext" />
     <None Include="StrongnameKey.snk" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+<!--  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />-->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
