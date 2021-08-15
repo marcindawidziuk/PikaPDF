@@ -30,6 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
+using System.Drawing.Imaging;
 using PikaPDF.DocumentObjectModel.Internals;
 using PikaPDF.DocumentObjectModel.Shapes;
 using PikaPDF.DocumentObjectModel.Tables;
@@ -123,7 +124,7 @@ namespace PikaPDF.DocumentObjectModel
         {
             return Elements.AddImage(name);
         }
-
+        
         /// <summary>
         /// Adds a new paragraph to the footnote.
         /// </summary>

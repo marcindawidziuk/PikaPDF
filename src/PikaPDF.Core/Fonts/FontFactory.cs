@@ -36,14 +36,6 @@ using PikaPDF.Core.Fonts.OpenType;
 using PikaPDF.Core.Internal;
 #if CORE || GDI
 #endif
-#if WPF
-using System.Windows;
-using System.Windows.Media;
-using System.Windows.Resources;
-using WpfFontFamily = System.Windows.Media.FontFamily;
-using WpfGlyphTypeface = System.Windows.Media.GlyphTypeface;
-using WpfTypeface = System.Windows.Media.Typeface;
-#endif
 
 #pragma warning disable 1591
 // ReSharper disable RedundantNameQualifier

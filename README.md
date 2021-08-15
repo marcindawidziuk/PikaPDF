@@ -1,38 +1,37 @@
-# MigraDoc
-MigraDoc Foundation - Creating documents on the fly
+# PikaPDF
 
-MigraDoc references PDFsharp as a submodule. After pulling MigraDoc to a local repository, call
-* git submodule init
-* git submodule update
+This project is mainly just a .NET 5 port of [MigraDoc](https://github.com/empira/MigraDoc). To make things more managable some of the features might be dropped.
 
-to update the submodule.
+Few key differences:
+- Dropped support for WPF and GDI renderer - just want to focus on generating PDF, to display them use different library
+- Added helpers to generate barcode images 
+- Adding fluent-like API:
+```csharp
+...
+var column1 = table.AddColumn()
+	.WithWidth(Unit.FromCentimeters(2));
+var row = table.AddRow()
+	.WithHeight(Unit.FromCentimeters(1));
 
-When forking MigraDoc, the fork will still reference the original PDFsharp repository. Consider forking PDFsharp, too, and use your fork as a submodule.
+row.CellAt(column1)
+	.AddParagraph("test")
+	.WithFontSize(13)
+	.WithFontBold();
 
-When downloading MigraDoc as a ZIP, the submodule PDFsharp will be empty. So also download a ZIP for the PDFsharp repository.
+// instead of
 
-Please note: Source code is also available on SourceForge as a ZIP file. The MigraDoc ZIP file on SourceForge does include the PDFsharp files.
+var column1 = table.AddColumn();
+column1.Width = Unit.FromCentimeters(2);
 
-# Resources
+var row = table.AddRow()
+	.WithHeight(Unit.FromCentimeters(1));
 
-The official project web site:  
-http://pdfsharp.net/
+var cell = table[row.Index, column1.Index];
+var paragraph = cell.AddParagraph("test")
+paragraph.Format.Font.Size = 13;
+paragraph.Format.Font.Bold = true;
 
-The official peer-to-peer support forum:  
-http://forum.pdfsharp.net/
+```
 
-# Release Notes for PDFsharp/MigraDoc 1.50 (stable)
-
-The stable version of PDFsharp 1.32 was published in 2013.  
-So a new stable version is long overdue.
-
-I really hope the stable version does not have any regressions versus 1.50 beta 3b or later.
-
-And I hope there are no regressions versus version 1.32 stable. But several bugs have been fixed.  
-There are a few breaking changes that require code updates.
-
-To use PDFsharp with Medium Trust you have to get the source code and make some changes. The NuGet packages do not support Medium Trust.  
-Azure servers do not require Medium Trust.
-
-I'm afraid that many users who never tried any beta version of PDFsharp 1.50 will now switch from version 1.32 stable to version 1.50 stable.  
-Nothing wrong about that. I hope we don't get an avalanche of bug reports now.
+Please not that this is still very much work in progress.
+I'm not planning on breaking compatibility with MigraDoc, just adding on top of it, so ideally this should be almost a drop-in replacement.

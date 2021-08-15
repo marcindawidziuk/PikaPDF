@@ -32,6 +32,8 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
 namespace PikaPDF.DocumentObjectModel
 {
@@ -40,6 +42,7 @@ namespace PikaPDF.DocumentObjectModel
     /// </summary>
     public class ImageHelper
     {
+        
         /// <summary>
         /// Gets the first existing image from the subfolders.
         /// </summary>

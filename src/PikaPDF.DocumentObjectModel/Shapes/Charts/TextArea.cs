@@ -30,6 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
+using System.Drawing.Imaging;
 using PikaPDF.DocumentObjectModel.Internals;
 using PikaPDF.DocumentObjectModel.Tables;
 using PikaPDF.DocumentObjectModel.Tables.Enums;

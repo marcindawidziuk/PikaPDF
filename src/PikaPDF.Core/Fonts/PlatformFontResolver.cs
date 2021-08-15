@@ -80,10 +80,8 @@ namespace PikaPDF.Core.Fonts
             if (fontSource == null)
                 return null;
 
-            //#if (CORE || GDI) && !WPF
-            //            // TODO: Support style simulation for GDI+ platform fonts.
-            //            fontResolverInfo = new PlatformFontResolverInfo(typefaceKey, false, false, gdiFont);
-            //#endif
+            // TODO: Support style simulation for GDI+ platform fonts.
+            fontResolverInfo = new PlatformFontResolverInfo(typefaceKey, false, false, gdiFont);
             if (fontResolvingOptions.OverrideStyleSimulations)
             {
                 // TODO: Support style simulation for GDI+ platform fonts.

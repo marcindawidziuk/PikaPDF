@@ -30,6 +30,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
+using System.Drawing.Imaging;
 using PikaPDF.DocumentObjectModel.Internals;
 using PikaPDF.DocumentObjectModel.Shapes.Charts;
 using PikaPDF.DocumentObjectModel.Shapes.Charts.enums;
@@ -125,7 +126,7 @@ namespace PikaPDF.DocumentObjectModel.Shapes
         {
             return Elements.AddImage(_fileName);
         }
-
+        
         /// <summary>
         /// Adds a new paragraph to the text frame.
         /// </summary>
